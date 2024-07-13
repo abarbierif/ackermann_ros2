@@ -1,0 +1,35 @@
+[1.119s] Invoking command in '/home/angelo/Documents/2024-1/ros/ackermann_robot': PYTHONPATH=/home/angelo/Documents/2024-1/ros/ackermann_robot/build/ackermann_robot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/angelo/Documents/2024-1/ros/ackermann_robot/install/ackermann_robot/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base build/ackermann_robot build --build-base /home/angelo/Documents/2024-1/ros/ackermann_robot/build/ackermann_robot/build install --record /home/angelo/Documents/2024-1/ros/ackermann_robot/build/ackermann_robot/install.log --single-version-externally-managed install_data
+[1.447s] running egg_info
+[1.447s] creating build/ackermann_robot/ackermann_robot.egg-info
+[1.471s] writing build/ackermann_robot/ackermann_robot.egg-info/PKG-INFO
+[1.472s] writing dependency_links to build/ackermann_robot/ackermann_robot.egg-info/dependency_links.txt
+[1.472s] writing requirements to build/ackermann_robot/ackermann_robot.egg-info/requires.txt
+[1.473s] writing top-level names to build/ackermann_robot/ackermann_robot.egg-info/top_level.txt
+[1.473s] writing manifest file 'build/ackermann_robot/ackermann_robot.egg-info/SOURCES.txt'
+[1.521s] reading manifest file 'build/ackermann_robot/ackermann_robot.egg-info/SOURCES.txt'
+[1.522s] writing manifest file 'build/ackermann_robot/ackermann_robot.egg-info/SOURCES.txt'
+[1.523s] running build
+[1.523s] running build_py
+[1.523s] creating /home/angelo/Documents/2024-1/ros/ackermann_robot/build/ackermann_robot/build
+[1.523s] creating /home/angelo/Documents/2024-1/ros/ackermann_robot/build/ackermann_robot/build/lib
+[1.523s] creating /home/angelo/Documents/2024-1/ros/ackermann_robot/build/ackermann_robot/build/lib/ackermann_robot
+[1.523s] copying ackermann_robot/__init__.py -> /home/angelo/Documents/2024-1/ros/ackermann_robot/build/ackermann_robot/build/lib/ackermann_robot
+[1.523s] running install
+[1.531s] running install_lib
+[1.556s] creating /home/angelo/Documents/2024-1/ros/ackermann_robot/install/ackermann_robot/lib/python3.10/site-packages/ackermann_robot
+[1.556s] copying /home/angelo/Documents/2024-1/ros/ackermann_robot/build/ackermann_robot/build/lib/ackermann_robot/__init__.py -> /home/angelo/Documents/2024-1/ros/ackermann_robot/install/ackermann_robot/lib/python3.10/site-packages/ackermann_robot
+[1.557s] byte-compiling /home/angelo/Documents/2024-1/ros/ackermann_robot/install/ackermann_robot/lib/python3.10/site-packages/ackermann_robot/__init__.py to __init__.cpython-310.pyc
+[1.558s] running install_data
+[1.558s] creating /home/angelo/Documents/2024-1/ros/ackermann_robot/install/ackermann_robot/share/ament_index
+[1.558s] creating /home/angelo/Documents/2024-1/ros/ackermann_robot/install/ackermann_robot/share/ament_index/resource_index
+[1.558s] creating /home/angelo/Documents/2024-1/ros/ackermann_robot/install/ackermann_robot/share/ament_index/resource_index/packages
+[1.558s] copying resource/ackermann_robot -> /home/angelo/Documents/2024-1/ros/ackermann_robot/install/ackermann_robot/share/ament_index/resource_index/packages
+[1.558s] copying package.xml -> /home/angelo/Documents/2024-1/ros/ackermann_robot/install/ackermann_robot/share/ackermann_robot
+[1.558s] creating /home/angelo/Documents/2024-1/ros/ackermann_robot/install/ackermann_robot/share/ackermann_robot/launch
+[1.558s] copying launch/gazebo.launch.py -> /home/angelo/Documents/2024-1/ros/ackermann_robot/install/ackermann_robot/share/ackermann_robot/launch/
+[1.558s] copying launch/visualization.launch.py -> /home/angelo/Documents/2024-1/ros/ackermann_robot/install/ackermann_robot/share/ackermann_robot/launch/
+[1.559s] running install_egg_info
+[1.582s] Copying build/ackermann_robot/ackermann_robot.egg-info to /home/angelo/Documents/2024-1/ros/ackermann_robot/install/ackermann_robot/lib/python3.10/site-packages/ackermann_robot-0.0.0-py3.10.egg-info
+[1.583s] running install_scripts
+[1.800s] writing list of installed files to '/home/angelo/Documents/2024-1/ros/ackermann_robot/build/ackermann_robot/install.log'
+[1.831s] Invoked command in '/home/angelo/Documents/2024-1/ros/ackermann_robot' returned '0': PYTHONPATH=/home/angelo/Documents/2024-1/ros/ackermann_robot/build/ackermann_robot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/angelo/Documents/2024-1/ros/ackermann_robot/install/ackermann_robot/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base build/ackermann_robot build --build-base /home/angelo/Documents/2024-1/ros/ackermann_robot/build/ackermann_robot/build install --record /home/angelo/Documents/2024-1/ros/ackermann_robot/build/ackermann_robot/install.log --single-version-externally-managed install_data

@@ -1,0 +1,136 @@
+<?xml version="1.0"?>
+<robot name="ackermann" xmlns:xacro="http://ros.org/wiki/xacro">
+
+  <xacro:include filename="params.xacro"/>
+  <!-- <xacro:include filename="gazebo.xacro"/> -->
+
+  <material name="red">
+    <color rgba="1.0 0 0 0.5"/>
+  </material>
+
+  <material name="blue">
+    <color rgba="0 0 1.0 0.5"/>
+  </material>
+
+  <material name="rubber">
+    <color rgba="0 0 0 0.5"/>
+  </material>
+
+  <link name="base_link">
+    <visual>
+      <origin xyz="0.0 0.0 ${wheelrad + 0.125}"/>
+      <geometry>
+        <box size="${lenght} ${width} ${height}"/>
+      </geometry>
+      <material name="red"/>
+    </visual>
+    <collision>
+      <origin xyz="0.0 0.0 ${wheelrad + 0.125}"/>
+      <geometry>
+        <box size="${lenght} ${width} ${height}"/>
+      </geometry>
+    </collision>
+    <xacro:default_inertial mass="1"/>
+  </link>
+
+  <xacro:macro name="base" params="prefix reflect">
+
+    <link name="${prefix}_direction">
+      <visual>
+        <origin xyz="0.0 0.0 0.0"/>
+        <geometry>
+          <sphere radius="${directionrad}"/>
+        </geometry>
+        <material name="blue"/>
+      </visual>
+      <xacro:default_inertial mass="1"/>
+    </link>
+
+    <link name="${prefix}_wheel">
+      <visual>
+        <geometry>
+          <cylinder radius="${wheelrad}" length="${wheelrad/2}"/>
+        </geometry>
+        <origin rpy="${pi/2} 0 0"/>
+        <material name="rubber"/>
+      </visual>
+      <collision>
+        <geometry>
+          <cylinder radius="${wheelrad}" length="${wheelrad/2}"/>
+        </geometry>
+        <origin rpy="${pi/2} 0 0"/>
+      </collision>
+      <xacro:cylinder_inertia m="0.1" r="${wheelrad}" h="${wheelrad/2}"/>
+    </link>
+
+    <link name="${prefix}_wheel_back">
+      <visual>
+        <geometry>
+          <cylinder radius="${wheelrad}" length="${wheelrad/2}"/>
+        </geometry>
+        <origin rpy="${pi/2} 0 0"/>
+        <material name="rubber"/>
+      </visual>
+      <collision>
+        <geometry>
+          <cylinder radius="${wheelrad}" length="${wheelrad/2}"/>
+        </geometry>
+        <origin rpy="${pi/2} 0 0"/>
+      </collision>
+      <xacro:cylinder_inertia m="0.1" r="${wheelrad}" h="${wheelrad/2}"/>
+    </link>
+
+    <joint name="base_link-${prefix}_direction_joint" type="revolute">
+      <axis xyz="0 0 1" />
+      <parent link="base_link"/>
+      <child link="${prefix}_direction"/>
+      <origin xyz="${lenght/2} ${(width/2)*reflect} ${wheelrad}"/>
+      <limit lower="${-pi/2.5}" upper="${pi/2.5}" effort="100" velocity="100"/>
+    </joint>
+
+    <joint name="${prefix}_direction-${prefix}_wheel" type="continuous">
+        <axis xyz="0.0 1 0.0"/>
+        <parent link="${prefix}_direction"/>
+        <child link="${prefix}_wheel"/>
+        <origin xyz="0.0 0.0 0.0"/>
+      </joint>
+
+    <joint name="base_link-${prefix}_wheel_back_joint" type="continuous">
+        <axis xyz="0 1 0"/>
+        <parent link="base_link"/>
+        <child link="${prefix}_wheel_back"/>
+        <origin xyz="-${lenght/2} ${(width/2)*reflect} ${wheelrad}"/>
+    </joint>
+
+  </xacro:macro>
+
+  <xacro:base prefix="left" reflect="1" />
+  <xacro:base prefix="right" reflect="-1" />
+
+  <link name="steering">
+    <visual>
+      <geometry>
+        <cylinder radius="0.01" length="0.2"/>
+      </geometry>
+      <origin xyz="0.0 0.0 0.0" rpy="${pi/2} 0.0 0.0"/>
+    </visual>  
+    <collision>
+      <geometry>
+        <cylinder radius="0.01" length="0.2"/>
+      </geometry>
+      <origin xyz="0.0 0.0 0.0" rpy="${pi/2} 0.0 0.0"/>
+    </collision>
+    <xacro:default_inertial mass="1"/>  
+  </link>
+
+  <joint name="steering_joint" type="revolute">
+    <parent link="base_link"/>
+    <child link="steering"/>
+    <axis xyz="0.0 0.0 1.0"/>
+    <limit lower="${-pi/2.5}" upper="${pi/2.5}" effort="100" velocity="100"/>
+    <origin xyz="${lenght/2} 0.0 ${height+2*wheelrad+2*directionrad}" rpy="0.0 0.0 0.0"/>
+  </joint>
+
+  <xacro:include filename="gazebo.xacro"/>
+  
+</robot>
