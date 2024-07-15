@@ -5,7 +5,7 @@ from launch_ros.actions import Node
 
 def generate_launch_description():
 
-    urdf_path = '/home/minicaos/project/ackermann_robot/ackermann_robot/urdf/robot.xacro'
+    urdf_path = '/home/angelo/Documents/repos/ackermann_ros2/ackermann_robot/urdf/ackermann.xacro'
 
     with open(urdf_path,'r') as i:
         robot_desc = i.read()
@@ -27,7 +27,7 @@ def generate_launch_description():
     )
 
     rviz = ExecuteProcess(
-        cmd=['rviz2', '-d', '/home/minicaos/project/ackermann_robot/ackermann_robot/rviz/config.rviz'],
+        cmd=['rviz2', '-d', '/home/angelo/Documents/repos/ackermann_ros2/ackermann_robot/rviz/config.rviz'],
         output='screen'
     )
 

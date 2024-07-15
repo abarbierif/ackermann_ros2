@@ -1,0 +1,18 @@
+running egg_info
+writing build/ackermann_robot/ackermann_robot.egg-info/PKG-INFO
+writing dependency_links to build/ackermann_robot/ackermann_robot.egg-info/dependency_links.txt
+writing requirements to build/ackermann_robot/ackermann_robot.egg-info/requires.txt
+writing top-level names to build/ackermann_robot/ackermann_robot.egg-info/top_level.txt
+reading manifest file 'build/ackermann_robot/ackermann_robot.egg-info/SOURCES.txt'
+writing manifest file 'build/ackermann_robot/ackermann_robot.egg-info/SOURCES.txt'
+running build
+running build_py
+running install
+running install_lib
+running install_data
+copying launch/visualization.launch.py -> /home/angelo/Documents/repos/ackermann_ros2/ackermann_robot/install/ackermann_robot/share/ackermann_robot/launch/
+running install_egg_info
+removing '/home/angelo/Documents/repos/ackermann_ros2/ackermann_robot/install/ackermann_robot/lib/python3.10/site-packages/ackermann_robot-0.0.0-py3.10.egg-info' (and everything under it)
+Copying build/ackermann_robot/ackermann_robot.egg-info to /home/angelo/Documents/repos/ackermann_ros2/ackermann_robot/install/ackermann_robot/lib/python3.10/site-packages/ackermann_robot-0.0.0-py3.10.egg-info
+running install_scripts
+writing list of installed files to '/home/angelo/Documents/repos/ackermann_ros2/ackermann_robot/build/ackermann_robot/install.log'
