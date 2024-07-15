@@ -31,16 +31,23 @@
     source install/local_setup.bash
     ros2 launch ackermann_robot visualization.launch.py
     ```
-  La visualización del robot es:
-  Utilizando ```rqt_graph``` se visualiza el siguiente grafo:
+    
+  La visualización del robot es:\
+  ![rviz](https://github.com/abarbierif/ackermann_ros2/blob/main/ackermann_robot/imgs/visualization_rviz.png)
+  Utilizando ```rqt_graph``` se visualiza el siguiente grafo:\
+  ![rviz_rqt_graph](https://github.com/abarbierif/ackermann_ros2/blob/main/ackermann_robot/imgs/rosgraph_rviz.png)
     
 ### GAZEBO
 
 - Para añadir un **nodo** de control se utliza el driver ```libgazebo_ros_ackermann_drive.so```, este es vinculado al robot con el siguiente archivo [gazebo.xacro](https://github.com/abarbierif/ackermann_ros2/blob/main/ackermann_robot/urdf/gazebo.xacro). Para modularizar los componentes del robot se utliza el archivo [robot.xacro](https://github.com/abarbierif/ackermann_ros2/blob/main/ackermann_robot/urdf/robot.xacro) (archivo principal que integra los componentes del robot)
 
 - Para la visualización mediante los ***nodos*** ```robot_state_publisher```, ```spawn_entity``` y ```gazebo``` se realizó el siguiente launch file [visualization.launch.py](https://github.com/abarbierif/ackermann_ros2/blob/main/ackermann_robot/launch/gazebo.launch.py). Adicionalmente, también se agregó el nodo ```rviz2```
-    >**Nota**: La variable ```urdf_path``` en la línea 12 debe ser modificado a la ruta del archivo ```.xacro```\
-    >**Nota**: La ruta al archivo ```config_lidar.rviz``` debe ser modificada por la ruta de un archivo de ocnfiguración de **RVIZ** previamente creado o en su defecto eliminar la opción del comando, en ese caso la configuración debe realizarse de forma manual una vez abierto **RVIZ**
+
+> [!NOTE]
+> La variable ```urdf_path``` en la línea 12 debe ser modificado a la ruta del archivo ```.xacro```
+
+> [!NOTE]
+> La ruta al archivo ```config_lidar.rviz``` debe ser modificada por la ruta de un archivo de ocnfiguración de **RVIZ** previamente creado o en su defecto eliminar la opción del comando, en ese caso la configuración debe realizarse de forma manual una vez abierto **RVIZ**
   
 
 #### Sensor LIDAR
@@ -54,9 +61,14 @@
     source install/local_setup.bash
     ros2 launch ackermann_robot gazebo.launch.py
     ```
-    > [!WARNING] Para visualizar el sensor en RVIZ es necesario añadir la visualización manualmente con el mensaje tipo ```LaserScan``` y luego vincularlo al tópico ```scan```. 
     
-  La visualización del robot en GAZEBO es:
-  
-  Utilizando ```rqt_graph``` se visualiza el siguiente grafo: 
+> [!WARNING]
+> Para visualizar el sensor en RVIZ es necesario añadir la visualización manualmente con el mensaje tipo ```LaserScan``` y luego vincularlo al tópico ```scan```. 
+    
+  La visualización del robot en GAZEBO es:\
+  ![](https://github.com/abarbierif/ackermann_ros2/blob/main/ackermann_robot/imgs/Screencast%20from%2007-15-2024%2007_10_48%20PM.gif)
+  Los datos del sensor LIDAR en RVIZ:
+  ![](https://github.com/abarbierif/ackermann_ros2/blob/main/ackermann_robot/imgs/Screencast%20from%2007-15-2024%2007_12_20%20PM.gif)
+  Utilizando ```rqt_graph``` se visualiza el siguiente grafo:
+  ![](https://github.com/abarbierif/ackermann_ros2/blob/main/ackermann_robot/imgs/rosgraph_gazebo.png)
   
