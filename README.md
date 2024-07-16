@@ -1,5 +1,110 @@
 # ackermann_ros2
 
+## Ackermann Steering
+
+The following image shows a four-wheeled robot with two independent
+steering wheels in the front.
+
+![A car-like robot with two steering wheels at the front](ackermann_robot/imgs/ackermann_steering.svg)
+
+-   $w_f$ is the wheel track of the front axle, measured between the two
+    kingpins.
+
+To prevent the front wheels from slipping, the steering angle of the
+front wheels cannot be equal. This is the so-called **Ackermann
+steering**.
+
+> [!NOTE]
+> Ackermann steering can also be achieved by a [mechanical linkage between the two front wheels](https://en.wikipedia.org/wiki/Ackermann_steering_geometry). In this case the robot has only one steering input, and the steering angle of the two front wheels is mechanically coupled. The inverse kinematics of the robot will then be the same as in the car-like model above.
+
+**Forward Kinematics**
+
+The forward kinematics is the same as for the car-like model above.
+
+**Inverse Kinematics**
+
+The turning radius of the robot is
+
+$$R_b = \frac{l}{\tan(\phi)}$$
+
+Then the steering angles of the front wheels must satisfy these
+conditions to avoid skidding
+
+$$\begin{aligned}
+\phi_{left} &= \arctan\left(\frac{l}{R_b - w_f/2}\right) &= \arctan\left(\frac{2l\sin(\phi)}{2l\cos(\phi) - w_f\sin(\phi)}\right)\\
+\phi_{right} &= \arctan\left(\frac{l}{R_b + w_f/2}\right) &= \arctan\left(\frac{2l\sin(\phi)}{2l\cos(\phi) + w_f\sin(\phi)}\right)
+\end{aligned}$$
+
+**Odometry**
+
+The calculation of $\phi$ from two angle measurements of the steering
+axle is overdetermined. If there is no slip and the measurements are
+ideal,
+
+$$\phi = \arctan\left(\frac{l\tan(\phi_{left})}{l + w_f/2 \tan(\phi_{left})}\right) = \arctan\left(\frac{l\tan(\phi_{right})}{l - w_f/2 \tan(\phi_{right})}\right)$$
+
+holds. But to get a more robust solution, we take the average of both ,
+i.e.,
+
+$$\phi = 0.5 \left(\arctan\left(\frac{l\tan(\phi_{left})}{l + w_f/2 \tan(\phi_{left})}\right) + \arctan\left(\frac{l\tan(\phi_{right})}{l - w_f/2 \tan(\phi_{right})}\right)\right).$$
+
+### Ackermann Steering with Traction
+
+The following image shows a four-wheeled car-like robot with two
+independent steering wheels at the front, which are also driven
+independently.
+
+![A car-like robot with two steering wheels at the front, which are also independently driven.](ackermann_robot/imgs/ackermann_steering_traction.svg)
+
+-   $d_{kp}$ is the distance from the kingpin to the contact point of
+    the front wheel with the ground.
+
+**Forward Kinematics**
+
+The forward kinematics is the same as the car-like model above.
+
+**Inverse Kinematics**
+
+To avoid slipping of the front wheels, the velocity of the front wheels
+cannot be equal and
+
+$$\frac{v_{front,left}}{R_{left}} = \frac{v_{front,right}}{R_{right}} = \frac{v_{b,x}}{R_b}$$
+
+with turning radius of the robot and the left/right front wheel
+
+$$\begin{aligned}
+R_b       &= \frac{l}{\tan(\phi)} \\
+R_{left}  &= \frac{l-d_{kp}\sin(\phi_{left})}{\sin(\phi_{left})}\\
+R_{right} &= \frac{l+d_{kp}\sin(\phi_{right})}{\sin(\phi_{right})}.
+\end{aligned}$$
+
+This results in the following inverse kinematics equations
+
+$$\begin{aligned}
+v_{front,left} &= \frac{v_{b,x}(l-d_{kp}\sin(\phi_{left}))}{R_b\sin(\phi_{left})}\\
+v_{front,right} &= \frac{v_{b,x}(l+d_{kp}\sin(\phi_{right}))}{R_b\sin(\phi_{right})}
+\end{aligned}$$
+
+with the steering angles of the front wheels from the Ackermann steering
+equations above.
+
+**Odometry**
+
+The calculation of $v_{b,x}$ from two encoder measurements of the
+traction axle is again overdetermined. If there is no slip and the
+encoders are ideal,
+
+$$v_{b,x} = v_{front,left} \frac{R_b\sin(\phi_{left})}{l-d_{kp}\sin(\phi_{left})} =  v_{front,right} \frac{R_b\sin(\phi_{right})}{l+d_{kp}\sin(\phi_{right})}$$
+
+holds. But to get a more robust solution, we take the average of both ,
+i.e.,
+
+$$v_{b,x} = 0.5 \left( v_{front,left} \frac{R_b\sin(\phi_{left})}{l-d_{kp}\sin(\phi_{left})} +  v_{front,right} \frac{R_b\sin(\phi_{right})}{l+d_{kp}\sin(\phi_{right})}\right).$$
+
+---
+
+## Proyecto Simulación con ROS2
+
 - ROS2 [ROS2 Documentation](https://docs.ros.org/en/iron/Installation/Ubuntu-Install-Debians.html) (Seguir Desktop Install)
 - Gazebo ```sudo apt install ros-<version_ros>-gazebo-ros-pkgs```
 - Xacro ```sudo apt install ros-<version_ros>-xacro```
