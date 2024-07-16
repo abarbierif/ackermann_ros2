@@ -117,7 +117,13 @@ $$v_{b,x} = 0.5 \left( v_{front,left} \frac{R_b\sin(\phi_{left})}{l-d_{kp}\sin(\
 
 ### URDF
 
-  - [ackermann xacro](https://github.com/abarbierif/ackermann_ros2/blob/main/ackermann_robot/urdf/ackermann.xacro)
+  - [ackermann urdf](https://github.com/abarbierif/ackermann_ros2/blob/main/ackermann_robot/urdf/ackermann_model.urdf)
+
+    comandos de ejecución:
+    
+      ```
+      ros2 launch urdf_tutorial display.launch.py model:=<path to ackermann_model.urdf>
+      ```
 
 ### XACRO
 
