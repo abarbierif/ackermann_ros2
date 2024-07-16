@@ -1,5 +1,7 @@
 # ackermann_ros2
 
+Ackermann Steering Kinematic from [ros2 controllers](https://control.ros.org/master/doc/ros2_controllers/doc/mobile_robot_kinematics.html#mobile-robot-kinematics)
+
 ## Ackermann Steering
 
 The following image shows a four-wheeled robot with two independent
