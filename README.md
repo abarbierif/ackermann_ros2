@@ -124,6 +124,8 @@ $$v_{b,x} = 0.5 \left( v_{front,left} \frac{R_b\sin(\phi_{left})}{l-d_{kp}\sin(\
       ```
       ros2 launch urdf_tutorial display.launch.py model:=<path to ackermann_model.urdf>
       ```
+> [!IMPORTANT]
+> Es necesario instalar el paquete ```urdf_tutorial``` mediante ```sudo apt install ros-iron-urdf-tutorial```
 
 ### XACRO
 
