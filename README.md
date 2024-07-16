@@ -21,16 +21,20 @@
   - El archivo de lanzamiento en ***python*** es creado en un **paquete** de ROS. Para más información sobre la creación de paquetes y su compilación ver [creating a package](https://docs.ros.org/en/iron/Tutorials/Beginner-Client-Libraries/Creating-Your-First-ROS2-Package.html)
   
   - Para la visualización mediante los ***nodos*** ```robot_state_publisher```, ```joint_state_publisher``` y ```rviz2``` se realizó el siguiente launch file [visualization.launch.py](https://github.com/abarbierif/ackermann_ros2/blob/main/ackermann_robot/launch/visualization.launch.py)
-    >**Nota**: La variable ```urdf_path``` en la línea 8 debe ser modificado a la ruta del archivo ```.xacro```\
-    >**Nota**: La ruta al archivo ```config.rviz``` debe ser modificada por la ruta de un archivo de ocnfiguración de **RVIZ** previamente creado o en su defecto eliminar la opción del comando, en ese caso la configuración debe realizarse de forma manual una vez abierto **RVIZ**
+
+> [!NOTE]
+>  La variable ```urdf_path``` en la línea 8 debe ser modificado a la ruta del archivo ```.xacro```
+
+> [!NOTE]
+>  La ruta al archivo ```config.rviz``` debe ser modificada por la ruta de un archivo de ocnfiguración de **RVIZ** previamente creado o en su defecto eliminar la opción del comando, en ese caso la configuración debe realizarse de forma manual una vez abierto **RVIZ**
 
   comandos de ejecución:
     
-    ```
-    cd <workspace>
-    source install/local_setup.bash
-    ros2 launch ackermann_robot visualization.launch.py
-    ```
+  ```
+  cd <workspace>
+  source install/local_setup.bash
+  ros2 launch ackermann_robot visualization.launch.py
+  ```
     
   La visualización del robot es:\
   ![rviz](https://github.com/abarbierif/ackermann_ros2/blob/main/ackermann_robot/imgs/visualization_rviz.png)
