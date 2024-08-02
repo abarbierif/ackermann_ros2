@@ -40,7 +40,7 @@ Una vez ejecutado el nodo en el microcontrolador, se pueden visualizar los tópi
 comandos de ejecución:
 
 ```
-ros2 topic echo
+ros2 topic list
 ```
 
 Donde debería estar el nodo creado con el nombre que se le asignó, en nuestro caso **micro_ros_arduino_node_publisher**
