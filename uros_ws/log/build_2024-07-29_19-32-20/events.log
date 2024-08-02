@@ -1,0 +1,1257 @@
+[0.000000] (-) TimerEvent: {}
+[0.000125] (-) JobUnselected: {'identifier': 'drive_base_msgs'}
+[0.000152] (-) JobUnselected: {'identifier': 'micro_ros_setup'}
+[0.000172] (micro_ros_msgs) JobQueued: {'identifier': 'micro_ros_msgs', 'dependencies': OrderedDict()}
+[0.000190] (micro_ros_agent) JobQueued: {'identifier': 'micro_ros_agent', 'dependencies': OrderedDict([('micro_ros_msgs', '/home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs')])}
+[0.000845] (micro_ros_msgs) JobStarted: {'identifier': 'micro_ros_msgs'}
+[0.010327] (micro_ros_msgs) JobProgress: {'identifier': 'micro_ros_msgs', 'progress': 'cmake'}
+[0.010697] (micro_ros_msgs) Command: {'cmd': ['/usr/bin/cmake', '/home/angelo/Documents/repos/ackermann_ros2/uros_ws/src/uros/micro_ros_msgs', '-DUAGENT_BUILD_EXECUTABLE=OFF', '-DUAGENT_P2P_PROFILE=OFF', '--no-warn-unused-cli', '-DCMAKE_INSTALL_PREFIX=/home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs'], 'cwd': '/home/angelo/Documents/repos/ackermann_ros2/uros_ws/build/micro_ros_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'angelo'), ('LC_TIME', 'es_CL.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/iron/opt/rviz_ogre_vendor/lib:/opt/ros/iron/lib/x86_64-linux-gnu:/opt/ros/iron/lib'), ('HOME', '/home/angelo'), ('OLDPWD', '/home/angelo/Documents/repos/ackermann_ros2/uros_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'es_CL.UTF-8'), ('SYSTEMD_EXEC_PID', '2179'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/angelo/Documents/repos/ackermann_ros2/uros_ws/install'), ('ROS_DISTRO', 'iron'), ('LOGNAME', 'angelo'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'angelo'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('PATH', '/opt/ros/iron/bin:/home/angelo/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/abarbieri-laptop:@/tmp/.ICE-unix/1984,unix/abarbieri-laptop:/tmp/.ICE-unix/1984'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'es_CL.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/4ce74bac_35e3_4bc6_b9a7_60b7d68aaf0c'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'es_CL.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.F7IVR2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.98'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_setup:/opt/ros/iron'), ('SHELL', '/bin/bash'), ('LC_NAME', 'es_CL.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'es_CL.UTF-8'), ('LC_IDENTIFICATION', 'es_CL.UTF-8'), ('ROS_AUTOMATIC_DISCOVERY_RANGE', 'SUBNET'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/angelo/Documents/repos/ackermann_ros2/uros_ws/build/micro_ros_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/iron/lib/python3.10/site-packages'), ('LC_NUMERIC', 'es_CL.UTF-8'), ('LC_PAPER', 'es_CL.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_setup:/opt/ros/iron')]), 'shell': False}
+[0.019474] (micro_ros_msgs) StdoutLine: {'line': b'Not searching for unused variables given on the command line.\n'}
+[0.079740] (micro_ros_msgs) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.099859] (-) TimerEvent: {}
+[0.140015] (micro_ros_msgs) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.148889] (micro_ros_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.200045] (-) TimerEvent: {}
+[0.231532] (micro_ros_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.239008] (micro_ros_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.239252] (micro_ros_msgs) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.239495] (micro_ros_msgs) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.242294] (micro_ros_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.300239] (-) TimerEvent: {}
+[0.331524] (micro_ros_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.341297] (micro_ros_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.341587] (micro_ros_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.342240] (micro_ros_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.344705] (micro_ros_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 2.0.6 (/opt/ros/iron/share/ament_cmake/cmake)\n'}
+[0.400346] (-) TimerEvent: {}
+[0.500722] (-) TimerEvent: {}
+[0.601244] (-) TimerEvent: {}
+[0.661663] (micro_ros_msgs) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter \n'}
+[0.701430] (-) TimerEvent: {}
+[0.740076] (micro_ros_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.5.0 (/opt/ros/iron/share/rosidl_default_generators/cmake)\n'}
+[0.746607] (micro_ros_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.797747] (micro_ros_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.801555] (-) TimerEvent: {}
+[0.842331] (micro_ros_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 4.0.1 (/opt/ros/iron/share/rosidl_adapter/cmake)\n'}
+[0.848493] (micro_ros_msgs) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.14.4 (/opt/ros/iron/share/ament_lint_auto/cmake)\n'}
+[0.901796] (-) TimerEvent: {}
+[1.002236] (-) TimerEvent: {}
+[1.102662] (-) TimerEvent: {}
+[1.165968] (micro_ros_msgs) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.11.2 (/opt/ros/iron/share/ament_cmake_ros/cmake)\n'}
+[1.202813] (-) TimerEvent: {}
+[1.303154] (-) TimerEvent: {}
+[1.343494] (micro_ros_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.403393] (-) TimerEvent: {}
+[1.503822] (-) TimerEvent: {}
+[1.575617] (micro_ros_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.597499] (micro_ros_msgs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") \n'}
+[1.599613] (micro_ros_msgs) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.2 (/opt/ros/iron/share/python_cmake_module/cmake)\n'}
+[1.604040] (-) TimerEvent: {}
+[1.626777] (micro_ros_msgs) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") \n'}
+[1.627125] (micro_ros_msgs) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[1.627189] (micro_ros_msgs) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[1.627242] (micro_ros_msgs) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[1.653239] (micro_ros_msgs) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[1.688184] (micro_ros_msgs) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[1.694176] (micro_ros_msgs) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[1.697020] (micro_ros_msgs) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[1.703383] (micro_ros_msgs) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.704072] (-) TimerEvent: {}
+[1.730223] (micro_ros_msgs) StdoutLine: {'line': b'-- Generating done\n'}
+[1.732971] (micro_ros_msgs) StdoutLine: {'line': b'-- Build files have been written to: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/build/micro_ros_msgs\n'}
+[1.739733] (micro_ros_msgs) CommandEnded: {'returncode': 0}
+[1.740433] (micro_ros_msgs) JobProgress: {'identifier': 'micro_ros_msgs', 'progress': 'build'}
+[1.741146] (micro_ros_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/angelo/Documents/repos/ackermann_ros2/uros_ws/build/micro_ros_msgs', '--', '-j8', '-l8'], 'cwd': '/home/angelo/Documents/repos/ackermann_ros2/uros_ws/build/micro_ros_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'angelo'), ('LC_TIME', 'es_CL.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/iron/opt/rviz_ogre_vendor/lib:/opt/ros/iron/lib/x86_64-linux-gnu:/opt/ros/iron/lib'), ('HOME', '/home/angelo'), ('OLDPWD', '/home/angelo/Documents/repos/ackermann_ros2/uros_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'es_CL.UTF-8'), ('SYSTEMD_EXEC_PID', '2179'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/angelo/Documents/repos/ackermann_ros2/uros_ws/install'), ('ROS_DISTRO', 'iron'), ('LOGNAME', 'angelo'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'angelo'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('PATH', '/opt/ros/iron/bin:/home/angelo/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/abarbieri-laptop:@/tmp/.ICE-unix/1984,unix/abarbieri-laptop:/tmp/.ICE-unix/1984'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'es_CL.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/4ce74bac_35e3_4bc6_b9a7_60b7d68aaf0c'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'es_CL.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.F7IVR2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.98'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_setup:/opt/ros/iron'), ('SHELL', '/bin/bash'), ('LC_NAME', 'es_CL.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'es_CL.UTF-8'), ('LC_IDENTIFICATION', 'es_CL.UTF-8'), ('ROS_AUTOMATIC_DISCOVERY_RANGE', 'SUBNET'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/angelo/Documents/repos/ackermann_ros2/uros_ws/build/micro_ros_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/iron/lib/python3.10/site-packages'), ('LC_NUMERIC', 'es_CL.UTF-8'), ('LC_PAPER', 'es_CL.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_setup:/opt/ros/iron')]), 'shell': False}
+[1.797900] (micro_ros_msgs) StdoutLine: {'line': b'[  1%] \x1b[34m\x1b[1mGenerating type hashes for ROS interfaces\x1b[0m\n'}
+[1.804212] (-) TimerEvent: {}
+[1.806097] (micro_ros_msgs) StdoutLine: {'line': b'[  1%] Built target ament_cmake_python_copy_micro_ros_msgs\n'}
+[1.904314] (-) TimerEvent: {}
+[2.004597] (-) TimerEvent: {}
+[2.028059] (micro_ros_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[2.029699] (micro_ros_msgs) StdoutLine: {'line': b'creating micro_ros_msgs.egg-info\n'}
+[2.046596] (micro_ros_msgs) StdoutLine: {'line': b'[  1%] Built target micro_ros_msgs__rosidl_generator_type_description\n'}
+[2.051808] (micro_ros_msgs) StdoutLine: {'line': b'writing micro_ros_msgs.egg-info/PKG-INFO\n'}
+[2.052555] (micro_ros_msgs) StdoutLine: {'line': b'writing dependency_links to micro_ros_msgs.egg-info/dependency_links.txt\n'}
+[2.052839] (micro_ros_msgs) StdoutLine: {'line': b'writing top-level names to micro_ros_msgs.egg-info/top_level.txt\n'}
+[2.053059] (micro_ros_msgs) StdoutLine: {'line': b"writing manifest file 'micro_ros_msgs.egg-info/SOURCES.txt'\n"}
+[2.060998] (micro_ros_msgs) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[2.075191] (micro_ros_msgs) StdoutLine: {'line': b'[  5%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[2.104722] (-) TimerEvent: {}
+[2.113174] (micro_ros_msgs) StdoutLine: {'line': b"reading manifest file 'micro_ros_msgs.egg-info/SOURCES.txt'\n"}
+[2.113847] (micro_ros_msgs) StdoutLine: {'line': b"writing manifest file 'micro_ros_msgs.egg-info/SOURCES.txt'\n"}
+[2.151924] (micro_ros_msgs) StdoutLine: {'line': b'[  5%] Built target ament_cmake_python_build_micro_ros_msgs_egg\n'}
+[2.205010] (-) TimerEvent: {}
+[2.305523] (-) TimerEvent: {}
+[2.405974] (-) TimerEvent: {}
+[2.419743] (micro_ros_msgs) StdoutLine: {'line': b'[  5%] Built target micro_ros_msgs__cpp\n'}
+[2.506172] (-) TimerEvent: {}
+[2.520217] (micro_ros_msgs) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding C object CMakeFiles/micro_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/micro_ros_msgs/msg/detail/node__functions.c.o\x1b[0m\n'}
+[2.520554] (micro_ros_msgs) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding C object CMakeFiles/micro_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/micro_ros_msgs/msg/detail/node__type_support.c.o\x1b[0m\n'}
+[2.520792] (micro_ros_msgs) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding C object CMakeFiles/micro_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/micro_ros_msgs/msg/detail/node__description.c.o\x1b[0m\n'}
+[2.520937] (micro_ros_msgs) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding C object CMakeFiles/micro_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/micro_ros_msgs/msg/detail/graph__description.c.o\x1b[0m\n'}
+[2.521149] (micro_ros_msgs) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding C object CMakeFiles/micro_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/micro_ros_msgs/msg/detail/graph__type_support.c.o\x1b[0m\n'}
+[2.521738] (micro_ros_msgs) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding C object CMakeFiles/micro_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/micro_ros_msgs/msg/detail/entity__description.c.o\x1b[0m\n'}
+[2.522328] (micro_ros_msgs) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding C object CMakeFiles/micro_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/micro_ros_msgs/msg/detail/graph__functions.c.o\x1b[0m\n'}
+[2.522669] (micro_ros_msgs) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding C object CMakeFiles/micro_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/micro_ros_msgs/msg/detail/entity__functions.c.o\x1b[0m\n'}
+[2.591528] (micro_ros_msgs) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding C object CMakeFiles/micro_ros_msgs__rosidl_generator_c.dir/rosidl_generator_c/micro_ros_msgs/msg/detail/entity__type_support.c.o\x1b[0m\n'}
+[2.606293] (-) TimerEvent: {}
+[2.624323] (micro_ros_msgs) StdoutLine: {'line': b'[ 24%] \x1b[32m\x1b[1mLinking C shared library libmicro_ros_msgs__rosidl_generator_c.so\x1b[0m\n'}
+[2.680374] (micro_ros_msgs) StdoutLine: {'line': b'[ 24%] Built target micro_ros_msgs__rosidl_generator_c\n'}
+[2.694759] (micro_ros_msgs) StdoutLine: {'line': b'[ 25%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[2.695320] (micro_ros_msgs) StdoutLine: {'line': b'[ 27%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[2.697492] (micro_ros_msgs) StdoutLine: {'line': b'[ 29%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[2.697880] (micro_ros_msgs) StdoutLine: {'line': b'[ 31%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[2.699355] (micro_ros_msgs) StdoutLine: {'line': b'[ 35%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[2.699726] (micro_ros_msgs) StdoutLine: {'line': b'[ 35%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[2.706402] (-) TimerEvent: {}
+[2.806787] (-) TimerEvent: {}
+[2.907148] (-) TimerEvent: {}
+[3.007455] (-) TimerEvent: {}
+[3.107849] (-) TimerEvent: {}
+[3.122595] (micro_ros_msgs) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding C object CMakeFiles/micro_ros_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/micro_ros_msgs/msg/detail/node__type_support.c.o\x1b[0m\n'}
+[3.123818] (micro_ros_msgs) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding C object CMakeFiles/micro_ros_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/micro_ros_msgs/msg/detail/graph__type_support.c.o\x1b[0m\n'}
+[3.127846] (micro_ros_msgs) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding C object CMakeFiles/micro_ros_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/micro_ros_msgs/msg/detail/entity__type_support.c.o\x1b[0m\n'}
+[3.150462] (micro_ros_msgs) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding CXX object CMakeFiles/micro_ros_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/micro_ros_msgs/msg/detail/graph__type_support_c.cpp.o\x1b[0m\n'}
+[3.202080] (micro_ros_msgs) StdoutLine: {'line': b'[ 44%] \x1b[32mBuilding CXX object CMakeFiles/micro_ros_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/micro_ros_msgs/msg/detail/node__type_support_c.cpp.o\x1b[0m\n'}
+[3.207029] (micro_ros_msgs) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding CXX object CMakeFiles/micro_ros_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/micro_ros_msgs/msg/detail/entity__type_support_c.cpp.o\x1b[0m\n'}
+[3.208169] (-) TimerEvent: {}
+[3.211871] (micro_ros_msgs) StdoutLine: {'line': b'[ 48%] \x1b[32m\x1b[1mLinking C shared library libmicro_ros_msgs__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[3.277733] (micro_ros_msgs) StdoutLine: {'line': b'[ 48%] Built target micro_ros_msgs__rosidl_typesupport_introspection_c\n'}
+[3.294419] (micro_ros_msgs) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/micro_ros_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/micro_ros_msgs/msg/graph__type_support.cpp.o\x1b[0m\n'}
+[3.299467] (micro_ros_msgs) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding CXX object CMakeFiles/micro_ros_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/micro_ros_msgs/msg/node__type_support.cpp.o\x1b[0m\n'}
+[3.308295] (-) TimerEvent: {}
+[3.343951] (micro_ros_msgs) StdoutLine: {'line': b'[ 53%] \x1b[32mBuilding CXX object CMakeFiles/micro_ros_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/micro_ros_msgs/msg/graph__type_support.cpp.o\x1b[0m\n'}
+[3.408460] (-) TimerEvent: {}
+[3.422023] (micro_ros_msgs) StdoutLine: {'line': b'[ 55%] \x1b[32mBuilding CXX object CMakeFiles/micro_ros_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/micro_ros_msgs/msg/node__type_support.cpp.o\x1b[0m\n'}
+[3.426155] (micro_ros_msgs) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding CXX object CMakeFiles/micro_ros_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/micro_ros_msgs/msg/detail/graph__type_support.cpp.o\x1b[0m\n'}
+[3.454643] (micro_ros_msgs) StdoutLine: {'line': b'[ 59%] \x1b[32mBuilding CXX object CMakeFiles/micro_ros_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/micro_ros_msgs/msg/detail/dds_fastrtps/graph__type_support.cpp.o\x1b[0m\n'}
+[3.504771] (micro_ros_msgs) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding CXX object CMakeFiles/micro_ros_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/micro_ros_msgs/msg/entity__type_support.cpp.o\x1b[0m\n'}
+[3.508573] (-) TimerEvent: {}
+[3.587245] (micro_ros_msgs) StdoutLine: {'line': b'[ 62%] \x1b[32m\x1b[1mLinking CXX shared library libmicro_ros_msgs__rosidl_typesupport_c.so\x1b[0m\n'}
+[3.608715] (-) TimerEvent: {}
+[3.682280] (micro_ros_msgs) StdoutLine: {'line': b'[ 62%] Built target micro_ros_msgs__rosidl_typesupport_c\n'}
+[3.703530] (micro_ros_msgs) StdoutLine: {'line': b'[ 64%] \x1b[32mBuilding CXX object CMakeFiles/micro_ros_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/micro_ros_msgs/msg/detail/node__type_support.cpp.o\x1b[0m\n'}
+[3.708872] (-) TimerEvent: {}
+[3.809332] (-) TimerEvent: {}
+[3.843292] (micro_ros_msgs) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/micro_ros_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/micro_ros_msgs/msg/detail/entity__type_support.cpp.o\x1b[0m\n'}
+[3.863790] (micro_ros_msgs) StdoutLine: {'line': b'[ 68%] \x1b[32mBuilding CXX object CMakeFiles/micro_ros_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/micro_ros_msgs/msg/entity__type_support.cpp.o\x1b[0m\n'}
+[3.885685] (micro_ros_msgs) StdoutLine: {'line': b'[ 70%] \x1b[32m\x1b[1mLinking CXX shared library libmicro_ros_msgs__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[3.909446] (-) TimerEvent: {}
+[4.009881] (-) TimerEvent: {}
+[4.048684] (micro_ros_msgs) StdoutLine: {'line': b'[ 72%] \x1b[32mBuilding CXX object CMakeFiles/micro_ros_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/micro_ros_msgs/msg/detail/dds_fastrtps/node__type_support.cpp.o\x1b[0m\n'}
+[4.056406] (micro_ros_msgs) StdoutLine: {'line': b'[ 74%] \x1b[32mBuilding CXX object CMakeFiles/micro_ros_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/micro_ros_msgs/msg/detail/dds_fastrtps/entity__type_support.cpp.o\x1b[0m\n'}
+[4.083674] (micro_ros_msgs) StdoutLine: {'line': b'[ 74%] Built target micro_ros_msgs__rosidl_typesupport_fastrtps_c\n'}
+[4.110010] (-) TimerEvent: {}
+[4.210762] (-) TimerEvent: {}
+[4.311507] (-) TimerEvent: {}
+[4.412267] (-) TimerEvent: {}
+[4.512945] (-) TimerEvent: {}
+[4.546924] (micro_ros_msgs) StdoutLine: {'line': b'[ 75%] \x1b[32m\x1b[1mLinking CXX shared library libmicro_ros_msgs__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[4.595110] (micro_ros_msgs) StdoutLine: {'line': b'[ 77%] \x1b[32m\x1b[1mLinking CXX shared library libmicro_ros_msgs__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[4.613140] (-) TimerEvent: {}
+[4.662745] (micro_ros_msgs) StdoutLine: {'line': b'[ 77%] Built target micro_ros_msgs__rosidl_typesupport_cpp\n'}
+[4.671262] (micro_ros_msgs) StdoutLine: {'line': b'[ 77%] Built target micro_ros_msgs__rosidl_typesupport_introspection_cpp\n'}
+[4.713332] (-) TimerEvent: {}
+[4.813744] (-) TimerEvent: {}
+[4.872551] (micro_ros_msgs) StdoutLine: {'line': b'[ 79%] \x1b[32m\x1b[1mLinking CXX shared library libmicro_ros_msgs__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[4.913938] (-) TimerEvent: {}
+[4.949691] (micro_ros_msgs) StdoutLine: {'line': b'[ 79%] Built target micro_ros_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[4.985331] (micro_ros_msgs) StdoutLine: {'line': b'[ 79%] Built target micro_ros_msgs\n'}
+[5.014107] (-) TimerEvent: {}
+[5.021510] (micro_ros_msgs) StdoutLine: {'line': b'[ 81%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[5.114341] (-) TimerEvent: {}
+[5.214637] (-) TimerEvent: {}
+[5.315023] (-) TimerEvent: {}
+[5.415477] (-) TimerEvent: {}
+[5.482106] (micro_ros_msgs) StdoutLine: {'line': b'[ 81%] Built target micro_ros_msgs__py\n'}
+[5.506981] (micro_ros_msgs) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding C object CMakeFiles/micro_ros_msgs__rosidl_generator_py.dir/rosidl_generator_py/micro_ros_msgs/msg/_node_s.c.o\x1b[0m\n'}
+[5.507241] (micro_ros_msgs) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding C object CMakeFiles/micro_ros_msgs__rosidl_generator_py.dir/rosidl_generator_py/micro_ros_msgs/msg/_graph_s.c.o\x1b[0m\n'}
+[5.507358] (micro_ros_msgs) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/micro_ros_msgs__rosidl_generator_py.dir/rosidl_generator_py/micro_ros_msgs/msg/_entity_s.c.o\x1b[0m\n'}
+[5.515615] (-) TimerEvent: {}
+[5.616047] (-) TimerEvent: {}
+[5.636291] (micro_ros_msgs) StdoutLine: {'line': b'[ 88%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/micro_ros_msgs/libmicro_ros_msgs__rosidl_generator_py.so\x1b[0m\n'}
+[5.678674] (micro_ros_msgs) StdoutLine: {'line': b'[ 88%] Built target micro_ros_msgs__rosidl_generator_py\n'}
+[5.705407] (micro_ros_msgs) StdoutLine: {'line': b'[ 94%] \x1b[32mBuilding C object CMakeFiles/micro_ros_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/micro_ros_msgs/_micro_ros_msgs_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[5.705654] (micro_ros_msgs) StdoutLine: {'line': b'[ 94%] \x1b[32mBuilding C object CMakeFiles/micro_ros_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/micro_ros_msgs/_micro_ros_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[5.705789] (micro_ros_msgs) StdoutLine: {'line': b'[ 94%] \x1b[32mBuilding C object CMakeFiles/micro_ros_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/micro_ros_msgs/_micro_ros_msgs_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[5.716215] (-) TimerEvent: {}
+[5.809506] (micro_ros_msgs) StdoutLine: {'line': b'[ 98%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/micro_ros_msgs/micro_ros_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[5.809701] (micro_ros_msgs) StdoutLine: {'line': b'[ 98%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/micro_ros_msgs/micro_ros_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[5.811751] (micro_ros_msgs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/micro_ros_msgs/micro_ros_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[5.816333] (-) TimerEvent: {}
+[5.850354] (micro_ros_msgs) StdoutLine: {'line': b'[100%] Built target micro_ros_msgs__rosidl_typesupport_c__pyext\n'}
+[5.850647] (micro_ros_msgs) StdoutLine: {'line': b'[100%] Built target micro_ros_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[5.856034] (micro_ros_msgs) StdoutLine: {'line': b'[100%] Built target micro_ros_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[5.868674] (micro_ros_msgs) CommandEnded: {'returncode': 0}
+[5.916442] (-) TimerEvent: {}
+[6.016815] (-) TimerEvent: {}
+[6.117182] (-) TimerEvent: {}
+[6.217618] (-) TimerEvent: {}
+[6.293442] (micro_ros_msgs) JobProgress: {'identifier': 'micro_ros_msgs', 'progress': 'install'}
+[6.302474] (micro_ros_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/angelo/Documents/repos/ackermann_ros2/uros_ws/build/micro_ros_msgs'], 'cwd': '/home/angelo/Documents/repos/ackermann_ros2/uros_ws/build/micro_ros_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'angelo'), ('LC_TIME', 'es_CL.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/iron/opt/rviz_ogre_vendor/lib:/opt/ros/iron/lib/x86_64-linux-gnu:/opt/ros/iron/lib'), ('HOME', '/home/angelo'), ('OLDPWD', '/home/angelo/Documents/repos/ackermann_ros2/uros_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'es_CL.UTF-8'), ('SYSTEMD_EXEC_PID', '2179'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/angelo/Documents/repos/ackermann_ros2/uros_ws/install'), ('ROS_DISTRO', 'iron'), ('LOGNAME', 'angelo'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'angelo'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('PATH', '/opt/ros/iron/bin:/home/angelo/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/abarbieri-laptop:@/tmp/.ICE-unix/1984,unix/abarbieri-laptop:/tmp/.ICE-unix/1984'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'es_CL.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/4ce74bac_35e3_4bc6_b9a7_60b7d68aaf0c'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'es_CL.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.F7IVR2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.98'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_setup:/opt/ros/iron'), ('SHELL', '/bin/bash'), ('LC_NAME', 'es_CL.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'es_CL.UTF-8'), ('LC_IDENTIFICATION', 'es_CL.UTF-8'), ('ROS_AUTOMATIC_DISCOVERY_RANGE', 'SUBNET'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/angelo/Documents/repos/ackermann_ros2/uros_ws/build/micro_ros_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/iron/lib/python3.10/site-packages'), ('LC_NUMERIC', 'es_CL.UTF-8'), ('LC_PAPER', 'es_CL.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_setup:/opt/ros/iron')]), 'shell': False}
+[6.310345] (micro_ros_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[6.310606] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/share/ament_index/resource_index/rosidl_interfaces/micro_ros_msgs\n'}
+[6.310767] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/share/micro_ros_msgs/msg/Graph.json\n'}
+[6.310913] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/share/micro_ros_msgs/msg/Node.json\n'}
+[6.311056] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/share/micro_ros_msgs/msg/Entity.json\n'}
+[6.311290] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs\n'}
+[6.311431] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg\n'}
+[6.311564] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/graph.h\n'}
+[6.311700] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[6.311831] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/node.h\n'}
+[6.311960] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail\n'}
+[6.312126] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/node__type_support.h\n'}
+[6.312276] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/node__functions.h\n'}
+[6.312429] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/graph__struct.h\n'}
+[6.312565] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/entity__functions.c\n'}
+[6.312702] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/entity__struct.h\n'}
+[6.312860] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/entity__description.c\n'}
+[6.312997] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/graph__functions.c\n'}
+[6.313128] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/graph__functions.h\n'}
+[6.313256] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/graph__description.c\n'}
+[6.313431] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/entity__type_support.h\n'}
+[6.313614] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/graph__type_support.c\n'}
+[6.313735] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/entity__type_support.c\n'}
+[6.313851] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/graph__type_support.h\n'}
+[6.314007] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/node__functions.c\n'}
+[6.314131] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/entity__functions.h\n'}
+[6.314272] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/node__type_support.c\n'}
+[6.314397] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/node__struct.h\n'}
+[6.314522] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/node__description.c\n'}
+[6.314766] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/entity.h\n'}
+[6.314977] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/share/micro_ros_msgs/environment/library_path.sh\n'}
+[6.315134] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/share/micro_ros_msgs/environment/library_path.dsv\n'}
+[6.315343] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/lib/libmicro_ros_msgs__rosidl_generator_c.so\n'}
+[6.315702] (micro_ros_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/lib/libmicro_ros_msgs__rosidl_generator_c.so" to ""\n'}
+[6.315849] (micro_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs\n'}
+[6.315971] (micro_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg\n'}
+[6.316113] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[6.316231] (micro_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail\n'}
+[6.316348] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/node__rosidl_typesupport_fastrtps_c.h\n'}
+[6.316456] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/graph__rosidl_typesupport_fastrtps_c.h\n'}
+[6.316586] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/entity__rosidl_typesupport_fastrtps_c.h\n'}
+[6.316693] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/lib/libmicro_ros_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[6.316988] (micro_ros_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/lib/libmicro_ros_msgs__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[6.317116] (micro_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs\n'}
+[6.317243] (micro_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg\n'}
+[6.317375] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[6.317483] (micro_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail\n'}
+[6.317609] (-) TimerEvent: {}
+[6.317754] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/graph__rosidl_typesupport_introspection_c.h\n'}
+[6.317875] (micro_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/graph__type_support.c\n'}
+[6.317997] (micro_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/entity__type_support.c\n'}
+[6.318100] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/entity__rosidl_typesupport_introspection_c.h\n'}
+[6.318263] (micro_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/node__type_support.c\n'}
+[6.318369] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/node__rosidl_typesupport_introspection_c.h\n'}
+[6.318470] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/lib/libmicro_ros_msgs__rosidl_typesupport_introspection_c.so\n'}
+[6.318604] (micro_ros_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/lib/libmicro_ros_msgs__rosidl_typesupport_introspection_c.so" to ""\n'}
+[6.318739] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/lib/libmicro_ros_msgs__rosidl_typesupport_c.so\n'}
+[6.318874] (micro_ros_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/lib/libmicro_ros_msgs__rosidl_typesupport_c.so" to ""\n'}
+[6.318997] (micro_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs\n'}
+[6.319117] (micro_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg\n'}
+[6.319239] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/entity.hpp\n'}
+[6.319359] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/graph.hpp\n'}
+[6.319481] (micro_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail\n'}
+[6.319599] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/entity__traits.hpp\n'}
+[6.319718] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/entity__builder.hpp\n'}
+[6.319825] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/node__traits.hpp\n'}
+[6.319950] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/graph__builder.hpp\n'}
+[6.320084] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/node__builder.hpp\n'}
+[6.320216] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/node__struct.hpp\n'}
+[6.320339] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/graph__struct.hpp\n'}
+[6.320463] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/graph__traits.hpp\n'}
+[6.320571] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/entity__struct.hpp\n'}
+[6.320715] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/node.hpp\n'}
+[6.320824] (micro_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs\n'}
+[6.320956] (micro_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg\n'}
+[6.321077] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[6.321197] (micro_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail\n'}
+[6.321313] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/dds_fastrtps\n'}
+[6.321419] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/node__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[6.321539] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/graph__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[6.321652] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/entity__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[6.321758] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/lib/libmicro_ros_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[6.322085] (micro_ros_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/lib/libmicro_ros_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[6.322256] (micro_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs\n'}
+[6.322362] (micro_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg\n'}
+[6.322484] (micro_ros_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail\n'}
+[6.322604] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/graph__type_support.cpp\n'}
+[6.322723] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/entity__type_support.cpp\n'}
+[6.322839] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/node__type_support.cpp\n'}
+[6.322956] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/node__rosidl_typesupport_introspection_cpp.hpp\n'}
+[6.323071] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/entity__rosidl_typesupport_introspection_cpp.hpp\n'}
+[6.323192] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/include/micro_ros_msgs/micro_ros_msgs/msg/detail/graph__rosidl_typesupport_introspection_cpp.hpp\n'}
+[6.323310] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/lib/libmicro_ros_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[6.323740] (micro_ros_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/lib/libmicro_ros_msgs__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[6.323853] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/lib/libmicro_ros_msgs__rosidl_typesupport_cpp.so\n'}
+[6.324253] (micro_ros_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/lib/libmicro_ros_msgs__rosidl_typesupport_cpp.so" to ""\n'}
+[6.324396] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/share/micro_ros_msgs/environment/pythonpath.sh\n'}
+[6.324518] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/share/micro_ros_msgs/environment/pythonpath.dsv\n'}
+[6.324666] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/lib/python3.10/site-packages/micro_ros_msgs-4.0.1-py3.10.egg-info\n'}
+[6.324818] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/lib/python3.10/site-packages/micro_ros_msgs-4.0.1-py3.10.egg-info/SOURCES.txt\n'}
+[6.324955] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/lib/python3.10/site-packages/micro_ros_msgs-4.0.1-py3.10.egg-info/PKG-INFO\n'}
+[6.325091] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/lib/python3.10/site-packages/micro_ros_msgs-4.0.1-py3.10.egg-info/dependency_links.txt\n'}
+[6.325213] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/lib/python3.10/site-packages/micro_ros_msgs-4.0.1-py3.10.egg-info/top_level.txt\n'}
+[6.325374] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/lib/python3.10/site-packages/micro_ros_msgs\n'}
+[6.325500] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/lib/python3.10/site-packages/micro_ros_msgs/micro_ros_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[6.325645] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/lib/python3.10/site-packages/micro_ros_msgs/micro_ros_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[6.325792] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/lib/python3.10/site-packages/micro_ros_msgs/__init__.py\n'}
+[6.325924] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/lib/python3.10/site-packages/micro_ros_msgs/libmicro_ros_msgs__rosidl_generator_py.so\n'}
+[6.326076] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/lib/python3.10/site-packages/micro_ros_msgs/_micro_ros_msgs_s.ep.rosidl_typesupport_c.c\n'}
+[6.326221] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/lib/python3.10/site-packages/micro_ros_msgs/micro_ros_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[6.326370] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/lib/python3.10/site-packages/micro_ros_msgs/msg\n'}
+[6.326494] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/lib/python3.10/site-packages/micro_ros_msgs/msg/_entity_s.c\n'}
+[6.326627] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/lib/python3.10/site-packages/micro_ros_msgs/msg/_graph_s.c\n'}
+[6.326760] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/lib/python3.10/site-packages/micro_ros_msgs/msg/__init__.py\n'}
+[6.326902] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/lib/python3.10/site-packages/micro_ros_msgs/msg/_node.py\n'}
+[6.327034] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/lib/python3.10/site-packages/micro_ros_msgs/msg/_node_s.c\n'}
+[6.327172] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/lib/python3.10/site-packages/micro_ros_msgs/msg/_graph.py\n'}
+[6.327313] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/lib/python3.10/site-packages/micro_ros_msgs/msg/_entity.py\n'}
+[6.327468] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/lib/python3.10/site-packages/micro_ros_msgs/_micro_ros_msgs_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[6.327602] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/lib/python3.10/site-packages/micro_ros_msgs/_micro_ros_msgs_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[6.366075] (micro_ros_msgs) StdoutLine: {'line': b"Listing '/home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/lib/python3.10/site-packages/micro_ros_msgs'...\n"}
+[6.366308] (micro_ros_msgs) StdoutLine: {'line': b"Compiling '/home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/lib/python3.10/site-packages/micro_ros_msgs/__init__.py'...\n"}
+[6.366407] (micro_ros_msgs) StdoutLine: {'line': b"Listing '/home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/lib/python3.10/site-packages/micro_ros_msgs/msg'...\n"}
+[6.366467] (micro_ros_msgs) StdoutLine: {'line': b"Compiling '/home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/lib/python3.10/site-packages/micro_ros_msgs/msg/__init__.py'...\n"}
+[6.366523] (micro_ros_msgs) StdoutLine: {'line': b"Compiling '/home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/lib/python3.10/site-packages/micro_ros_msgs/msg/_entity.py'...\n"}
+[6.366578] (micro_ros_msgs) StdoutLine: {'line': b"Compiling '/home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/lib/python3.10/site-packages/micro_ros_msgs/msg/_graph.py'...\n"}
+[6.366632] (micro_ros_msgs) StdoutLine: {'line': b"Compiling '/home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/lib/python3.10/site-packages/micro_ros_msgs/msg/_node.py'...\n"}
+[6.370808] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/lib/python3.10/site-packages/micro_ros_msgs/micro_ros_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[6.371110] (micro_ros_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/lib/python3.10/site-packages/micro_ros_msgs/micro_ros_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[6.371341] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/lib/python3.10/site-packages/micro_ros_msgs/micro_ros_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[6.371635] (micro_ros_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/lib/python3.10/site-packages/micro_ros_msgs/micro_ros_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[6.371823] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/lib/python3.10/site-packages/micro_ros_msgs/micro_ros_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[6.372160] (micro_ros_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/lib/python3.10/site-packages/micro_ros_msgs/micro_ros_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[6.372282] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/lib/libmicro_ros_msgs__rosidl_generator_py.so\n'}
+[6.372605] (micro_ros_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/lib/libmicro_ros_msgs__rosidl_generator_py.so" to ""\n'}
+[6.372738] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/share/micro_ros_msgs/msg/Graph.idl\n'}
+[6.372987] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/share/micro_ros_msgs/msg/Node.idl\n'}
+[6.373171] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/share/micro_ros_msgs/msg/Entity.idl\n'}
+[6.373408] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/share/micro_ros_msgs/msg/Graph.msg\n'}
+[6.373571] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/share/micro_ros_msgs/msg/Node.msg\n'}
+[6.373671] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/share/micro_ros_msgs/msg/Entity.msg\n'}
+[6.373839] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/share/ament_index/resource_index/package_run_dependencies/micro_ros_msgs\n'}
+[6.374061] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/share/ament_index/resource_index/parent_prefix_path/micro_ros_msgs\n'}
+[6.374254] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/share/micro_ros_msgs/environment/ament_prefix_path.sh\n'}
+[6.374457] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/share/micro_ros_msgs/environment/ament_prefix_path.dsv\n'}
+[6.374669] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/share/micro_ros_msgs/environment/path.sh\n'}
+[6.374835] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/share/micro_ros_msgs/environment/path.dsv\n'}
+[6.374976] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/share/micro_ros_msgs/local_setup.bash\n'}
+[6.375141] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/share/micro_ros_msgs/local_setup.sh\n'}
+[6.375342] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/share/micro_ros_msgs/local_setup.zsh\n'}
+[6.375465] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/share/micro_ros_msgs/local_setup.dsv\n'}
+[6.375594] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/share/micro_ros_msgs/package.dsv\n'}
+[6.375772] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/share/ament_index/resource_index/packages/micro_ros_msgs\n'}
+[6.376220] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/share/micro_ros_msgs/cmake/export_micro_ros_msgs__rosidl_generator_cExport.cmake\n'}
+[6.376443] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/share/micro_ros_msgs/cmake/export_micro_ros_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[6.376604] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/share/micro_ros_msgs/cmake/export_micro_ros_msgs__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[6.376817] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/share/micro_ros_msgs/cmake/export_micro_ros_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[6.377010] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/share/micro_ros_msgs/cmake/micro_ros_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[6.377215] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/share/micro_ros_msgs/cmake/micro_ros_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[6.377367] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/share/micro_ros_msgs/cmake/micro_ros_msgs__rosidl_typesupport_cExport.cmake\n'}
+[6.377542] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/share/micro_ros_msgs/cmake/micro_ros_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[6.377766] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/share/micro_ros_msgs/cmake/export_micro_ros_msgs__rosidl_generator_cppExport.cmake\n'}
+[6.377973] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/share/micro_ros_msgs/cmake/export_micro_ros_msgs__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[6.378136] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/share/micro_ros_msgs/cmake/export_micro_ros_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[6.378300] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/share/micro_ros_msgs/cmake/micro_ros_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[6.378460] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/share/micro_ros_msgs/cmake/micro_ros_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[6.378727] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/share/micro_ros_msgs/cmake/micro_ros_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[6.378913] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/share/micro_ros_msgs/cmake/micro_ros_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[6.379111] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/share/micro_ros_msgs/cmake/export_micro_ros_msgs__rosidl_generator_pyExport.cmake\n'}
+[6.379236] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/share/micro_ros_msgs/cmake/export_micro_ros_msgs__rosidl_generator_pyExport-noconfig.cmake\n'}
+[6.379365] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/share/micro_ros_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[6.379508] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/share/micro_ros_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[6.379667] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/share/micro_ros_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[6.379819] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/share/micro_ros_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[6.379970] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/share/micro_ros_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[6.380195] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/share/micro_ros_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[6.380362] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/share/micro_ros_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[6.380508] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/share/micro_ros_msgs/cmake/micro_ros_msgsConfig.cmake\n'}
+[6.380645] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/share/micro_ros_msgs/cmake/micro_ros_msgsConfig-version.cmake\n'}
+[6.380785] (micro_ros_msgs) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/share/micro_ros_msgs/package.xml\n'}
+[6.383390] (micro_ros_msgs) CommandEnded: {'returncode': 0}
+[6.417760] (-) TimerEvent: {}
+[6.518080] (-) TimerEvent: {}
+[6.618556] (-) TimerEvent: {}
+[6.718953] (-) TimerEvent: {}
+[6.819435] (-) TimerEvent: {}
+[6.890552] (micro_ros_msgs) JobEnded: {'identifier': 'micro_ros_msgs', 'rc': 0}
+[6.891744] (micro_ros_agent) JobStarted: {'identifier': 'micro_ros_agent'}
+[6.904333] (micro_ros_agent) JobProgress: {'identifier': 'micro_ros_agent', 'progress': 'cmake'}
+[6.905195] (micro_ros_agent) Command: {'cmd': ['/usr/bin/cmake', '/home/angelo/Documents/repos/ackermann_ros2/uros_ws/src/uros/micro-ROS-Agent/micro_ros_agent', '-DUAGENT_BUILD_EXECUTABLE=OFF', '-DUAGENT_P2P_PROFILE=OFF', '--no-warn-unused-cli', '-DCMAKE_INSTALL_PREFIX=/home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_agent'], 'cwd': '/home/angelo/Documents/repos/ackermann_ros2/uros_ws/build/micro_ros_agent', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'angelo'), ('LC_TIME', 'es_CL.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/iron/opt/rviz_ogre_vendor/lib:/opt/ros/iron/lib/x86_64-linux-gnu:/opt/ros/iron/lib'), ('HOME', '/home/angelo'), ('OLDPWD', '/home/angelo/Documents/repos/ackermann_ros2/uros_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'es_CL.UTF-8'), ('SYSTEMD_EXEC_PID', '2179'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/angelo/Documents/repos/ackermann_ros2/uros_ws/install'), ('ROS_DISTRO', 'iron'), ('LOGNAME', 'angelo'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'angelo'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('PATH', '/opt/ros/iron/bin:/home/angelo/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/abarbieri-laptop:@/tmp/.ICE-unix/1984,unix/abarbieri-laptop:/tmp/.ICE-unix/1984'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'es_CL.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/4ce74bac_35e3_4bc6_b9a7_60b7d68aaf0c'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'es_CL.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.F7IVR2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.98'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs:/home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_setup:/opt/ros/iron'), ('SHELL', '/bin/bash'), ('LC_NAME', 'es_CL.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'es_CL.UTF-8'), ('LC_IDENTIFICATION', 'es_CL.UTF-8'), ('ROS_AUTOMATIC_DISCOVERY_RANGE', 'SUBNET'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/angelo/Documents/repos/ackermann_ros2/uros_ws/build/micro_ros_agent'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/lib/python3.10/site-packages:/opt/ros/iron/lib/python3.10/site-packages'), ('LC_NUMERIC', 'es_CL.UTF-8'), ('LC_PAPER', 'es_CL.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs:/home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_setup:/opt/ros/iron')]), 'shell': False}
+[6.915205] (micro_ros_agent) StdoutLine: {'line': b'Not searching for unused variables given on the command line.\n'}
+[6.919555] (-) TimerEvent: {}
+[6.992429] (micro_ros_agent) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[6.999840] (micro_ros_agent) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[7.019743] (-) TimerEvent: {}
+[7.098451] (micro_ros_agent) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[7.104943] (micro_ros_agent) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[7.105252] (micro_ros_agent) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[7.105715] (micro_ros_agent) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[7.119873] (-) TimerEvent: {}
+[7.165635] (micro_ros_agent) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[7.173634] (micro_ros_agent) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[7.220054] (-) TimerEvent: {}
+[7.275495] (micro_ros_agent) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[7.282192] (micro_ros_agent) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[7.282476] (micro_ros_agent) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[7.282821] (micro_ros_agent) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[7.311549] (micro_ros_agent) StdoutLine: {'line': b'-- Configuring done\n'}
+[7.314118] (micro_ros_agent) StdoutLine: {'line': b'-- Generating done\n'}
+[7.314643] (micro_ros_agent) StdoutLine: {'line': b'-- Build files have been written to: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/build/micro_ros_agent\n'}
+[7.318665] (micro_ros_agent) CommandEnded: {'returncode': 0}
+[7.319712] (micro_ros_agent) JobProgress: {'identifier': 'micro_ros_agent', 'progress': 'build'}
+[7.319828] (micro_ros_agent) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/angelo/Documents/repos/ackermann_ros2/uros_ws/build/micro_ros_agent', '--', '-j8', '-l8'], 'cwd': '/home/angelo/Documents/repos/ackermann_ros2/uros_ws/build/micro_ros_agent', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'angelo'), ('LC_TIME', 'es_CL.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/iron/opt/rviz_ogre_vendor/lib:/opt/ros/iron/lib/x86_64-linux-gnu:/opt/ros/iron/lib'), ('HOME', '/home/angelo'), ('OLDPWD', '/home/angelo/Documents/repos/ackermann_ros2/uros_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'es_CL.UTF-8'), ('SYSTEMD_EXEC_PID', '2179'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/angelo/Documents/repos/ackermann_ros2/uros_ws/install'), ('ROS_DISTRO', 'iron'), ('LOGNAME', 'angelo'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'angelo'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('PATH', '/opt/ros/iron/bin:/home/angelo/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/abarbieri-laptop:@/tmp/.ICE-unix/1984,unix/abarbieri-laptop:/tmp/.ICE-unix/1984'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'es_CL.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/4ce74bac_35e3_4bc6_b9a7_60b7d68aaf0c'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'es_CL.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.F7IVR2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.98'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs:/home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_setup:/opt/ros/iron'), ('SHELL', '/bin/bash'), ('LC_NAME', 'es_CL.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'es_CL.UTF-8'), ('LC_IDENTIFICATION', 'es_CL.UTF-8'), ('ROS_AUTOMATIC_DISCOVERY_RANGE', 'SUBNET'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/angelo/Documents/repos/ackermann_ros2/uros_ws/build/micro_ros_agent'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/lib/python3.10/site-packages:/opt/ros/iron/lib/python3.10/site-packages'), ('LC_NUMERIC', 'es_CL.UTF-8'), ('LC_PAPER', 'es_CL.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs:/home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_setup:/opt/ros/iron')]), 'shell': False}
+[7.320512] (-) TimerEvent: {}
+[7.381614] (micro_ros_agent) StdoutLine: {'line': b"[  6%] \x1b[34m\x1b[1mCreating directories for 'xrceagent'\x1b[0m\n"}
+[7.420661] (-) TimerEvent: {}
+[7.468321] (micro_ros_agent) StdoutLine: {'line': b"[ 12%] \x1b[34m\x1b[1mPerforming download step (git clone) for 'xrceagent'\x1b[0m\n"}
+[7.500915] (micro_ros_agent) StderrLine: {'line': b"Cloning into 'xrceagent'...\n"}
+[7.520793] (-) TimerEvent: {}
+[7.621360] (-) TimerEvent: {}
+[7.721903] (-) TimerEvent: {}
+[7.822466] (-) TimerEvent: {}
+[7.923070] (-) TimerEvent: {}
+[8.023710] (-) TimerEvent: {}
+[8.124394] (-) TimerEvent: {}
+[8.225024] (-) TimerEvent: {}
+[8.325606] (-) TimerEvent: {}
+[8.426255] (-) TimerEvent: {}
+[8.526853] (-) TimerEvent: {}
+[8.627433] (-) TimerEvent: {}
+[8.728055] (-) TimerEvent: {}
+[8.828526] (-) TimerEvent: {}
+[8.929155] (-) TimerEvent: {}
+[9.029743] (-) TimerEvent: {}
+[9.130341] (-) TimerEvent: {}
+[9.231108] (-) TimerEvent: {}
+[9.331684] (-) TimerEvent: {}
+[9.432295] (-) TimerEvent: {}
+[9.532878] (-) TimerEvent: {}
+[9.633493] (-) TimerEvent: {}
+[9.734221] (-) TimerEvent: {}
+[9.834825] (-) TimerEvent: {}
+[9.935497] (-) TimerEvent: {}
+[10.036135] (-) TimerEvent: {}
+[10.136773] (-) TimerEvent: {}
+[10.237412] (-) TimerEvent: {}
+[10.338072] (-) TimerEvent: {}
+[10.438798] (-) TimerEvent: {}
+[10.539404] (-) TimerEvent: {}
+[10.640076] (-) TimerEvent: {}
+[10.740711] (-) TimerEvent: {}
+[10.841387] (-) TimerEvent: {}
+[10.942006] (-) TimerEvent: {}
+[11.042624] (-) TimerEvent: {}
+[11.143180] (-) TimerEvent: {}
+[11.243790] (-) TimerEvent: {}
+[11.344405] (-) TimerEvent: {}
+[11.444945] (-) TimerEvent: {}
+[11.545469] (-) TimerEvent: {}
+[11.646028] (-) TimerEvent: {}
+[11.746572] (-) TimerEvent: {}
+[11.847009] (-) TimerEvent: {}
+[11.947519] (-) TimerEvent: {}
+[12.048094] (-) TimerEvent: {}
+[12.148649] (-) TimerEvent: {}
+[12.249149] (-) TimerEvent: {}
+[12.349679] (-) TimerEvent: {}
+[12.450217] (-) TimerEvent: {}
+[12.550775] (-) TimerEvent: {}
+[12.651228] (-) TimerEvent: {}
+[12.751666] (-) TimerEvent: {}
+[12.852097] (-) TimerEvent: {}
+[12.952554] (-) TimerEvent: {}
+[13.053001] (-) TimerEvent: {}
+[13.153625] (-) TimerEvent: {}
+[13.254234] (-) TimerEvent: {}
+[13.354798] (-) TimerEvent: {}
+[13.455259] (-) TimerEvent: {}
+[13.555744] (-) TimerEvent: {}
+[13.656178] (-) TimerEvent: {}
+[13.756629] (-) TimerEvent: {}
+[13.857097] (-) TimerEvent: {}
+[13.957531] (-) TimerEvent: {}
+[14.057920] (-) TimerEvent: {}
+[14.158279] (-) TimerEvent: {}
+[14.161116] (micro_ros_agent) StderrLine: {'line': b"Switched to a new branch 'ros2'\n"}
+[14.161456] (micro_ros_agent) StdoutLine: {'line': b"Branch 'ros2' set up to track remote branch 'ros2' from 'origin'.\n"}
+[14.250832] (micro_ros_agent) StdoutLine: {'line': b"[ 18%] \x1b[34m\x1b[1mPerforming update step for 'xrceagent'\x1b[0m\n"}
+[14.258435] (-) TimerEvent: {}
+[14.358899] (-) TimerEvent: {}
+[14.459461] (-) TimerEvent: {}
+[14.560086] (-) TimerEvent: {}
+[14.660634] (-) TimerEvent: {}
+[14.761139] (-) TimerEvent: {}
+[14.861730] (-) TimerEvent: {}
+[14.962359] (-) TimerEvent: {}
+[15.062874] (-) TimerEvent: {}
+[15.131742] (micro_ros_agent) StderrLine: {'line': b'HEAD is now at c25243c Enable Domain Override on Reference and XML Participant (#351)\n'}
+[15.163004] (-) TimerEvent: {}
+[15.208853] (micro_ros_agent) StdoutLine: {'line': b"[ 25%] \x1b[34m\x1b[1mNo patch step for 'xrceagent'\x1b[0m\n"}
+[15.242225] (micro_ros_agent) StdoutLine: {'line': b"[ 31%] \x1b[34m\x1b[1mPerforming configure step for 'xrceagent'\x1b[0m\n"}
+[15.256142] (micro_ros_agent) StdoutLine: {'line': b'loading initial cache file /home/angelo/Documents/repos/ackermann_ros2/uros_ws/build/micro_ros_agent/agent/tmp/xrceagent-cache-.cmake\n'}
+[15.263299] (-) TimerEvent: {}
+[15.322187] (micro_ros_agent) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[15.329201] (micro_ros_agent) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[15.363432] (-) TimerEvent: {}
+[15.422030] (micro_ros_agent) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[15.429741] (micro_ros_agent) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[15.430089] (micro_ros_agent) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[15.430779] (micro_ros_agent) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[15.463654] (-) TimerEvent: {}
+[15.488055] (micro_ros_agent) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[15.496271] (micro_ros_agent) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[15.563910] (-) TimerEvent: {}
+[15.599954] (micro_ros_agent) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[15.607203] (micro_ros_agent) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[15.607488] (micro_ros_agent) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[15.607662] (micro_ros_agent) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[15.612367] (micro_ros_agent) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[15.664450] (-) TimerEvent: {}
+[15.695024] (micro_ros_agent) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[15.695183] (micro_ros_agent) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[15.764572] (-) TimerEvent: {}
+[15.810988] (micro_ros_agent) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[15.811901] (micro_ros_agent) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[15.823214] (micro_ros_agent) StdoutLine: {'line': b'-- Configuring done\n'}
+[15.826591] (micro_ros_agent) StdoutLine: {'line': b'-- Generating done\n'}
+[15.827284] (micro_ros_agent) StdoutLine: {'line': b'-- Build files have been written to: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/build/micro_ros_agent/agent/src/xrceagent-build\n'}
+[15.854994] (micro_ros_agent) StdoutLine: {'line': b"[ 37%] \x1b[34m\x1b[1mPerforming build step for 'xrceagent'\x1b[0m\n"}
+[15.864718] (-) TimerEvent: {}
+[15.932252] (micro_ros_agent) StdoutLine: {'line': b"[ 12%] \x1b[34m\x1b[1mCreating directories for 'uagent'\x1b[0m\n"}
+[15.964880] (-) TimerEvent: {}
+[16.026643] (micro_ros_agent) StdoutLine: {'line': b"[ 25%] \x1b[34m\x1b[1mNo download step for 'uagent'\x1b[0m\n"}
+[16.055684] (micro_ros_agent) StdoutLine: {'line': b"[ 37%] \x1b[34m\x1b[1mNo update step for 'uagent'\x1b[0m\n"}
+[16.065003] (-) TimerEvent: {}
+[16.086847] (micro_ros_agent) StdoutLine: {'line': b"[ 50%] \x1b[34m\x1b[1mNo patch step for 'uagent'\x1b[0m\n"}
+[16.116135] (micro_ros_agent) StdoutLine: {'line': b"[ 62%] \x1b[34m\x1b[1mPerforming configure step for 'uagent'\x1b[0m\n"}
+[16.126803] (micro_ros_agent) StdoutLine: {'line': b'loading initial cache file /home/angelo/Documents/repos/ackermann_ros2/uros_ws/build/micro_ros_agent/agent/src/xrceagent-build/uagent-prefix/tmp/uagent-cache-.cmake\n'}
+[16.132709] (micro_ros_agent) StdoutLine: {'line': b"-- Setting build type to 'Release' as none was specified.\n"}
+[16.159141] (micro_ros_agent) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at /usr/share/cmake-3.22/Modules/FindPackageHandleStandardArgs.cmake:438 (message):\n'}
+[16.159365] (micro_ros_agent) StderrLine: {'line': b'  The package name passed to `find_package_handle_standard_args` (tinyxml2)\n'}
+[16.159437] (micro_ros_agent) StderrLine: {'line': b'  does not match the name of the calling package (TinyXML2).  This can lead\n'}
+[16.159657] (micro_ros_agent) StderrLine: {'line': b'  to problems in calling code that expects `find_package` result variables\n'}
+[16.159709] (micro_ros_agent) StderrLine: {'line': b'  (e.g., `_FOUND`) to follow a certain pattern.\n'}
+[16.159760] (micro_ros_agent) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[16.159809] (micro_ros_agent) StderrLine: {'line': b'  cmake/modules/FindTinyXML2.cmake:40 (find_package_handle_standard_args)\n'}
+[16.159881] (micro_ros_agent) StderrLine: {'line': b'  /opt/ros/iron/share/fastrtps/cmake/fastrtps-config.cmake:51 (find_package)\n'}
+[16.159929] (micro_ros_agent) StderrLine: {'line': b'  CMakeLists.txt:153 (find_package)\n'}
+[16.159984] (micro_ros_agent) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[16.160068] (micro_ros_agent) StderrLine: {'line': b'\x1b[0m\n'}
+[16.160131] (micro_ros_agent) StdoutLine: {'line': b'-- Found tinyxml2: /usr/lib/x86_64-linux-gnu/libtinyxml2.so  \n'}
+[16.165181] (-) TimerEvent: {}
+[16.255277] (micro_ros_agent) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[16.265322] (-) TimerEvent: {}
+[16.265835] (micro_ros_agent) StdoutLine: {'line': b'-- Configuring done\n'}
+[16.274779] (micro_ros_agent) StdoutLine: {'line': b'-- Generating done\n'}
+[16.275380] (micro_ros_agent) StdoutLine: {'line': b'-- Build files have been written to: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/build/micro_ros_agent/agent/src/xrceagent-build\n'}
+[16.296354] (micro_ros_agent) StdoutLine: {'line': b"[ 75%] \x1b[34m\x1b[1mPerforming build step for 'uagent'\x1b[0m\n"}
+[16.354645] (micro_ros_agent) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/Root.cpp.o\x1b[0m\n'}
+[16.354981] (micro_ros_agent) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/Agent.cpp.o\x1b[0m\n'}
+[16.356537] (micro_ros_agent) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/client/ProxyClient.cpp.o\x1b[0m\n'}
+[16.357063] (micro_ros_agent) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/AgentInstance.cpp.o\x1b[0m\n'}
+[16.357214] (micro_ros_agent) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/participant/Participant.cpp.o\x1b[0m\n'}
+[16.357294] (micro_ros_agent) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/topic/Topic.cpp.o\x1b[0m\n'}
+[16.357406] (micro_ros_agent) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/publisher/Publisher.cpp.o\x1b[0m\n'}
+[16.357516] (micro_ros_agent) StdoutLine: {'line': b'[ 19%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/processor/Processor.cpp.o\x1b[0m\n'}
+[16.365465] (-) TimerEvent: {}
+[16.465855] (-) TimerEvent: {}
+[16.566207] (-) TimerEvent: {}
+[16.666611] (-) TimerEvent: {}
+[16.767065] (-) TimerEvent: {}
+[16.867779] (-) TimerEvent: {}
+[16.968511] (-) TimerEvent: {}
+[17.069219] (-) TimerEvent: {}
+[17.170011] (-) TimerEvent: {}
+[17.270768] (-) TimerEvent: {}
+[17.371558] (-) TimerEvent: {}
+[17.472016] (-) TimerEvent: {}
+[17.572718] (-) TimerEvent: {}
+[17.673153] (-) TimerEvent: {}
+[17.773804] (-) TimerEvent: {}
+[17.874262] (-) TimerEvent: {}
+[17.974743] (-) TimerEvent: {}
+[18.075269] (-) TimerEvent: {}
+[18.175712] (-) TimerEvent: {}
+[18.276165] (-) TimerEvent: {}
+[18.338673] (micro_ros_agent) StdoutLine: {'line': b'[ 21%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/subscriber/Subscriber.cpp.o\x1b[0m\n'}
+[18.353507] (micro_ros_agent) StdoutLine: {'line': b'[ 26%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/datareader/DataReader.cpp.o\x1b[0m\n'}
+[18.353827] (micro_ros_agent) StdoutLine: {'line': b'[ 26%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/datawriter/DataWriter.cpp.o\x1b[0m\n'}
+[18.376287] (-) TimerEvent: {}
+[18.476704] (-) TimerEvent: {}
+[18.577107] (-) TimerEvent: {}
+[18.677571] (-) TimerEvent: {}
+[18.778298] (-) TimerEvent: {}
+[18.879013] (-) TimerEvent: {}
+[18.979825] (-) TimerEvent: {}
+[19.080650] (-) TimerEvent: {}
+[19.181431] (-) TimerEvent: {}
+[19.282185] (-) TimerEvent: {}
+[19.382809] (-) TimerEvent: {}
+[19.483448] (-) TimerEvent: {}
+[19.584092] (-) TimerEvent: {}
+[19.684734] (-) TimerEvent: {}
+[19.785409] (-) TimerEvent: {}
+[19.885939] (-) TimerEvent: {}
+[19.986734] (-) TimerEvent: {}
+[20.087372] (-) TimerEvent: {}
+[20.187839] (-) TimerEvent: {}
+[20.288550] (-) TimerEvent: {}
+[20.389058] (-) TimerEvent: {}
+[20.412562] (micro_ros_agent) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/requester/Requester.cpp.o\x1b[0m\n'}
+[20.489208] (-) TimerEvent: {}
+[20.589648] (-) TimerEvent: {}
+[20.690089] (-) TimerEvent: {}
+[20.790541] (-) TimerEvent: {}
+[20.891025] (-) TimerEvent: {}
+[20.991521] (-) TimerEvent: {}
+[21.092273] (-) TimerEvent: {}
+[21.192721] (-) TimerEvent: {}
+[21.293165] (-) TimerEvent: {}
+[21.393654] (-) TimerEvent: {}
+[21.494143] (-) TimerEvent: {}
+[21.594697] (-) TimerEvent: {}
+[21.695284] (-) TimerEvent: {}
+[21.795778] (-) TimerEvent: {}
+[21.896259] (-) TimerEvent: {}
+[21.996764] (-) TimerEvent: {}
+[22.097275] (-) TimerEvent: {}
+[22.197757] (-) TimerEvent: {}
+[22.298264] (-) TimerEvent: {}
+[22.398750] (-) TimerEvent: {}
+[22.499483] (-) TimerEvent: {}
+[22.599948] (-) TimerEvent: {}
+[22.700448] (-) TimerEvent: {}
+[22.800906] (-) TimerEvent: {}
+[22.901373] (-) TimerEvent: {}
+[23.001865] (-) TimerEvent: {}
+[23.102394] (-) TimerEvent: {}
+[23.202944] (-) TimerEvent: {}
+[23.303495] (-) TimerEvent: {}
+[23.404013] (-) TimerEvent: {}
+[23.504507] (-) TimerEvent: {}
+[23.604993] (-) TimerEvent: {}
+[23.696163] (micro_ros_agent) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/replier/Replier.cpp.o\x1b[0m\n'}
+[23.705199] (-) TimerEvent: {}
+[23.805749] (-) TimerEvent: {}
+[23.906341] (-) TimerEvent: {}
+[24.006923] (-) TimerEvent: {}
+[24.107521] (-) TimerEvent: {}
+[24.208074] (-) TimerEvent: {}
+[24.308677] (-) TimerEvent: {}
+[24.409269] (-) TimerEvent: {}
+[24.509850] (-) TimerEvent: {}
+[24.607890] (micro_ros_agent) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/object/XRCEObject.cpp.o\x1b[0m\n'}
+[24.610022] (-) TimerEvent: {}
+[24.710638] (-) TimerEvent: {}
+[24.811237] (-) TimerEvent: {}
+[24.911849] (-) TimerEvent: {}
+[25.012479] (-) TimerEvent: {}
+[25.036905] (micro_ros_agent) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/types/XRCETypes.cpp.o\x1b[0m\n'}
+[25.112638] (-) TimerEvent: {}
+[25.213328] (-) TimerEvent: {}
+[25.313996] (-) TimerEvent: {}
+[25.414693] (-) TimerEvent: {}
+[25.515446] (-) TimerEvent: {}
+[25.616157] (-) TimerEvent: {}
+[25.618230] (micro_ros_agent) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/types/MessageHeader.cpp.o\x1b[0m\n'}
+[25.716292] (-) TimerEvent: {}
+[25.817039] (-) TimerEvent: {}
+[25.917590] (-) TimerEvent: {}
+[26.018038] (-) TimerEvent: {}
+[26.118723] (-) TimerEvent: {}
+[26.219486] (-) TimerEvent: {}
+[26.320355] (-) TimerEvent: {}
+[26.421086] (-) TimerEvent: {}
+[26.454846] (micro_ros_agent) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/types/SubMessageHeader.cpp.o\x1b[0m\n'}
+[26.521243] (-) TimerEvent: {}
+[26.580299] (micro_ros_agent) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/message/InputMessage.cpp.o\x1b[0m\n'}
+[26.621424] (-) TimerEvent: {}
+[26.721942] (-) TimerEvent: {}
+[26.822713] (-) TimerEvent: {}
+[26.923474] (-) TimerEvent: {}
+[27.024194] (-) TimerEvent: {}
+[27.124983] (-) TimerEvent: {}
+[27.225689] (-) TimerEvent: {}
+[27.241359] (micro_ros_agent) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/message/OutputMessage.cpp.o\x1b[0m\n'}
+[27.326216] (-) TimerEvent: {}
+[27.426976] (-) TimerEvent: {}
+[27.434671] (micro_ros_agent) StdoutLine: {'line': b'[ 47%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/utils/ArgumentParser.cpp.o\x1b[0m\n'}
+[27.527148] (-) TimerEvent: {}
+[27.627907] (-) TimerEvent: {}
+[27.728386] (-) TimerEvent: {}
+[27.829049] (-) TimerEvent: {}
+[27.929762] (-) TimerEvent: {}
+[28.030490] (-) TimerEvent: {}
+[28.131205] (-) TimerEvent: {}
+[28.231965] (-) TimerEvent: {}
+[28.332423] (-) TimerEvent: {}
+[28.355927] (micro_ros_agent) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/transport/Server.cpp.o\x1b[0m\n'}
+[28.432566] (-) TimerEvent: {}
+[28.533283] (-) TimerEvent: {}
+[28.633976] (-) TimerEvent: {}
+[28.734731] (-) TimerEvent: {}
+[28.835486] (-) TimerEvent: {}
+[28.936238] (-) TimerEvent: {}
+[29.037057] (-) TimerEvent: {}
+[29.137808] (-) TimerEvent: {}
+[29.238597] (-) TimerEvent: {}
+[29.339382] (-) TimerEvent: {}
+[29.440089] (-) TimerEvent: {}
+[29.540858] (-) TimerEvent: {}
+[29.641559] (-) TimerEvent: {}
+[29.742057] (-) TimerEvent: {}
+[29.842537] (-) TimerEvent: {}
+[29.943259] (-) TimerEvent: {}
+[30.043945] (-) TimerEvent: {}
+[30.144641] (-) TimerEvent: {}
+[30.245415] (-) TimerEvent: {}
+[30.346118] (-) TimerEvent: {}
+[30.446924] (-) TimerEvent: {}
+[30.538899] (micro_ros_agent) StdoutLine: {'line': b'[ 52%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/transport/stream_framing/StreamFramingProtocol.cpp.o\x1b[0m\n'}
+[30.547082] (-) TimerEvent: {}
+[30.647553] (-) TimerEvent: {}
+[30.654847] (micro_ros_agent) StdoutLine: {'line': b'[ 54%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/transport/custom/CustomAgent.cpp.o\x1b[0m\n'}
+[30.747693] (-) TimerEvent: {}
+[30.848397] (-) TimerEvent: {}
+[30.949049] (-) TimerEvent: {}
+[30.992737] (micro_ros_agent) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/transport/udp/UDPv4AgentLinux.cpp.o\x1b[0m\n'}
+[31.049176] (-) TimerEvent: {}
+[31.149897] (-) TimerEvent: {}
+[31.250707] (-) TimerEvent: {}
+[31.351417] (-) TimerEvent: {}
+[31.452207] (-) TimerEvent: {}
+[31.553025] (-) TimerEvent: {}
+[31.653714] (-) TimerEvent: {}
+[31.754222] (-) TimerEvent: {}
+[31.855193] (-) TimerEvent: {}
+[31.955898] (-) TimerEvent: {}
+[32.056622] (-) TimerEvent: {}
+[32.157489] (-) TimerEvent: {}
+[32.258157] (-) TimerEvent: {}
+[32.358893] (-) TimerEvent: {}
+[32.459686] (-) TimerEvent: {}
+[32.560565] (-) TimerEvent: {}
+[32.623782] (micro_ros_agent) StdoutLine: {'line': b'[ 59%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/transport/udp/UDPv6AgentLinux.cpp.o\x1b[0m\n'}
+[32.660710] (-) TimerEvent: {}
+[32.725105] (micro_ros_agent) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/transport/tcp/TCPv4AgentLinux.cpp.o\x1b[0m\n'}
+[32.760848] (-) TimerEvent: {}
+[32.861334] (-) TimerEvent: {}
+[32.962212] (-) TimerEvent: {}
+[33.062906] (-) TimerEvent: {}
+[33.163631] (-) TimerEvent: {}
+[33.264354] (-) TimerEvent: {}
+[33.267159] (micro_ros_agent) StdoutLine: {'line': b'[ 64%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/transport/tcp/TCPv6AgentLinux.cpp.o\x1b[0m\n'}
+[33.364498] (-) TimerEvent: {}
+[33.465239] (-) TimerEvent: {}
+[33.566025] (-) TimerEvent: {}
+[33.666747] (-) TimerEvent: {}
+[33.767405] (-) TimerEvent: {}
+[33.867913] (-) TimerEvent: {}
+[33.940863] (micro_ros_agent) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/transport/serial/SerialAgentLinux.cpp.o\x1b[0m\n'}
+[33.968093] (-) TimerEvent: {}
+[34.068866] (-) TimerEvent: {}
+[34.169657] (-) TimerEvent: {}
+[34.270492] (-) TimerEvent: {}
+[34.371029] (-) TimerEvent: {}
+[34.471738] (-) TimerEvent: {}
+[34.572455] (-) TimerEvent: {}
+[34.673176] (-) TimerEvent: {}
+[34.773933] (-) TimerEvent: {}
+[34.874759] (-) TimerEvent: {}
+[34.975475] (-) TimerEvent: {}
+[35.076164] (-) TimerEvent: {}
+[35.176827] (-) TimerEvent: {}
+[35.277519] (-) TimerEvent: {}
+[35.378203] (-) TimerEvent: {}
+[35.478948] (-) TimerEvent: {}
+[35.579676] (-) TimerEvent: {}
+[35.680471] (-) TimerEvent: {}
+[35.780950] (-) TimerEvent: {}
+[35.881445] (-) TimerEvent: {}
+[35.982197] (-) TimerEvent: {}
+[36.082908] (-) TimerEvent: {}
+[36.183615] (-) TimerEvent: {}
+[36.284338] (-) TimerEvent: {}
+[36.385257] (-) TimerEvent: {}
+[36.485967] (-) TimerEvent: {}
+[36.586778] (-) TimerEvent: {}
+[36.687519] (-) TimerEvent: {}
+[36.788281] (-) TimerEvent: {}
+[36.889014] (-) TimerEvent: {}
+[36.989744] (-) TimerEvent: {}
+[37.090469] (-) TimerEvent: {}
+[37.191230] (-) TimerEvent: {}
+[37.291714] (-) TimerEvent: {}
+[37.392434] (-) TimerEvent: {}
+[37.493119] (-) TimerEvent: {}
+[37.593800] (-) TimerEvent: {}
+[37.694513] (-) TimerEvent: {}
+[37.795287] (-) TimerEvent: {}
+[37.896009] (-) TimerEvent: {}
+[37.996786] (-) TimerEvent: {}
+[38.097473] (-) TimerEvent: {}
+[38.198173] (-) TimerEvent: {}
+[38.270978] (micro_ros_agent) StdoutLine: {'line': b'[ 69%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/transport/serial/TermiosAgentLinux.cpp.o\x1b[0m\n'}
+[38.298318] (-) TimerEvent: {}
+[38.399055] (-) TimerEvent: {}
+[38.481531] (micro_ros_agent) StdoutLine: {'line': b'[ 71%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/transport/serial/MultiSerialAgentLinux.cpp.o\x1b[0m\n'}
+[38.499228] (-) TimerEvent: {}
+[38.589092] (micro_ros_agent) StdoutLine: {'line': b'[ 73%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/transport/serial/MultiTermiosAgentLinux.cpp.o\x1b[0m\n'}
+[38.599363] (-) TimerEvent: {}
+[38.700013] (-) TimerEvent: {}
+[38.800664] (-) TimerEvent: {}
+[38.901413] (-) TimerEvent: {}
+[39.002094] (-) TimerEvent: {}
+[39.102829] (-) TimerEvent: {}
+[39.203537] (-) TimerEvent: {}
+[39.304327] (-) TimerEvent: {}
+[39.405013] (-) TimerEvent: {}
+[39.505802] (-) TimerEvent: {}
+[39.606547] (-) TimerEvent: {}
+[39.616463] (micro_ros_agent) StdoutLine: {'line': b'[ 76%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/transport/serial/PseudoTerminalAgentLinux.cpp.o\x1b[0m\n'}
+[39.706713] (-) TimerEvent: {}
+[39.809459] (-) TimerEvent: {}
+[39.909911] (-) TimerEvent: {}
+[40.010372] (-) TimerEvent: {}
+[40.111103] (-) TimerEvent: {}
+[40.211823] (-) TimerEvent: {}
+[40.280695] (micro_ros_agent) StdoutLine: {'line': b'[ 78%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/transport/can/CanAgentLinux.cpp.o\x1b[0m\n'}
+[40.311996] (-) TimerEvent: {}
+[40.412671] (-) TimerEvent: {}
+[40.513357] (-) TimerEvent: {}
+[40.614048] (-) TimerEvent: {}
+[40.714760] (-) TimerEvent: {}
+[40.815301] (-) TimerEvent: {}
+[40.845790] (micro_ros_agent) StdoutLine: {'line': b'[ 80%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/transport/discovery/DiscoveryServerLinux.cpp.o\x1b[0m\n'}
+[40.915450] (-) TimerEvent: {}
+[41.016201] (-) TimerEvent: {}
+[41.116937] (-) TimerEvent: {}
+[41.217694] (-) TimerEvent: {}
+[41.318426] (-) TimerEvent: {}
+[41.419169] (-) TimerEvent: {}
+[41.519926] (-) TimerEvent: {}
+[41.620650] (-) TimerEvent: {}
+[41.721370] (-) TimerEvent: {}
+[41.822158] (-) TimerEvent: {}
+[41.922886] (-) TimerEvent: {}
+[42.023606] (-) TimerEvent: {}
+[42.124356] (-) TimerEvent: {}
+[42.223149] (micro_ros_agent) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/transport/discovery/DiscoveryServer.cpp.o\x1b[0m\n'}
+[42.224482] (-) TimerEvent: {}
+[42.325189] (-) TimerEvent: {}
+[42.380098] (micro_ros_agent) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/types/TopicPubSubType.cpp.o\x1b[0m\n'}
+[42.425342] (-) TimerEvent: {}
+[42.526222] (-) TimerEvent: {}
+[42.627023] (-) TimerEvent: {}
+[42.728070] (-) TimerEvent: {}
+[42.828902] (-) TimerEvent: {}
+[42.929709] (-) TimerEvent: {}
+[43.030497] (-) TimerEvent: {}
+[43.131314] (-) TimerEvent: {}
+[43.232231] (-) TimerEvent: {}
+[43.333057] (-) TimerEvent: {}
+[43.433864] (-) TimerEvent: {}
+[43.534641] (-) TimerEvent: {}
+[43.635440] (-) TimerEvent: {}
+[43.719287] (micro_ros_agent) StdoutLine: {'line': b'[ 88%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/xmlobjects/xmlobjects.cpp.o\x1b[0m\n'}
+[43.735622] (-) TimerEvent: {}
+[43.836108] (-) TimerEvent: {}
+[43.936556] (-) TimerEvent: {}
+[44.037198] (-) TimerEvent: {}
+[44.137902] (-) TimerEvent: {}
+[44.238697] (-) TimerEvent: {}
+[44.339399] (-) TimerEvent: {}
+[44.440084] (-) TimerEvent: {}
+[44.540807] (-) TimerEvent: {}
+[44.641549] (-) TimerEvent: {}
+[44.742262] (-) TimerEvent: {}
+[44.844625] (-) TimerEvent: {}
+[44.945103] (-) TimerEvent: {}
+[45.045808] (-) TimerEvent: {}
+[45.061847] (micro_ros_agent) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/middleware/fast/FastEntities.cpp.o\x1b[0m\n'}
+[45.145961] (-) TimerEvent: {}
+[45.246470] (-) TimerEvent: {}
+[45.347006] (-) TimerEvent: {}
+[45.447552] (-) TimerEvent: {}
+[45.548143] (-) TimerEvent: {}
+[45.633078] (micro_ros_agent) StdoutLine: {'line': b'[ 92%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/middleware/fast/FastMiddleware.cpp.o\x1b[0m\n'}
+[45.648273] (-) TimerEvent: {}
+[45.748953] (-) TimerEvent: {}
+[45.849704] (-) TimerEvent: {}
+[45.950482] (-) TimerEvent: {}
+[46.031601] (micro_ros_agent) StdoutLine: {'line': b'[ 95%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/middleware/fastdds/FastDDSEntities.cpp.o\x1b[0m\n'}
+[46.036240] (micro_ros_agent) StdoutLine: {'line': b'[ 97%] \x1b[32mBuilding CXX object CMakeFiles/microxrcedds_agent.dir/src/cpp/middleware/fastdds/FastDDSMiddleware.cpp.o\x1b[0m\n'}
+[46.050638] (-) TimerEvent: {}
+[46.151399] (-) TimerEvent: {}
+[46.252110] (-) TimerEvent: {}
+[46.352780] (-) TimerEvent: {}
+[46.453448] (-) TimerEvent: {}
+[46.554232] (-) TimerEvent: {}
+[46.655158] (-) TimerEvent: {}
+[46.755932] (-) TimerEvent: {}
+[46.856785] (-) TimerEvent: {}
+[46.957251] (-) TimerEvent: {}
+[47.057815] (-) TimerEvent: {}
+[47.158357] (-) TimerEvent: {}
+[47.258796] (-) TimerEvent: {}
+[47.359249] (-) TimerEvent: {}
+[47.459669] (-) TimerEvent: {}
+[47.560096] (-) TimerEvent: {}
+[47.660520] (-) TimerEvent: {}
+[47.760868] (-) TimerEvent: {}
+[47.861283] (-) TimerEvent: {}
+[47.961700] (-) TimerEvent: {}
+[48.062127] (-) TimerEvent: {}
+[48.162576] (-) TimerEvent: {}
+[48.263050] (-) TimerEvent: {}
+[48.363491] (-) TimerEvent: {}
+[48.463936] (-) TimerEvent: {}
+[48.564327] (-) TimerEvent: {}
+[48.664783] (-) TimerEvent: {}
+[48.765222] (-) TimerEvent: {}
+[48.865636] (-) TimerEvent: {}
+[48.966401] (-) TimerEvent: {}
+[49.066809] (-) TimerEvent: {}
+[49.167299] (-) TimerEvent: {}
+[49.267699] (-) TimerEvent: {}
+[49.368126] (-) TimerEvent: {}
+[49.468662] (-) TimerEvent: {}
+[49.569085] (-) TimerEvent: {}
+[49.669507] (-) TimerEvent: {}
+[49.770062] (-) TimerEvent: {}
+[49.870530] (-) TimerEvent: {}
+[49.970977] (-) TimerEvent: {}
+[50.071401] (-) TimerEvent: {}
+[50.171817] (-) TimerEvent: {}
+[50.272243] (-) TimerEvent: {}
+[50.372652] (-) TimerEvent: {}
+[50.473095] (-) TimerEvent: {}
+[50.573529] (-) TimerEvent: {}
+[50.673954] (-) TimerEvent: {}
+[50.774390] (-) TimerEvent: {}
+[50.874821] (-) TimerEvent: {}
+[50.975225] (-) TimerEvent: {}
+[51.075630] (-) TimerEvent: {}
+[51.176069] (-) TimerEvent: {}
+[51.276480] (-) TimerEvent: {}
+[51.376911] (-) TimerEvent: {}
+[51.477343] (-) TimerEvent: {}
+[51.577737] (-) TimerEvent: {}
+[51.678172] (-) TimerEvent: {}
+[51.778601] (-) TimerEvent: {}
+[51.879032] (-) TimerEvent: {}
+[51.979470] (-) TimerEvent: {}
+[52.079865] (-) TimerEvent: {}
+[52.180307] (-) TimerEvent: {}
+[52.280726] (-) TimerEvent: {}
+[52.381078] (-) TimerEvent: {}
+[52.481487] (-) TimerEvent: {}
+[52.581952] (-) TimerEvent: {}
+[52.682368] (-) TimerEvent: {}
+[52.782791] (-) TimerEvent: {}
+[52.883109] (-) TimerEvent: {}
+[52.983609] (-) TimerEvent: {}
+[53.083964] (-) TimerEvent: {}
+[53.184402] (-) TimerEvent: {}
+[53.284806] (-) TimerEvent: {}
+[53.385344] (-) TimerEvent: {}
+[53.485759] (-) TimerEvent: {}
+[53.586181] (-) TimerEvent: {}
+[53.686571] (-) TimerEvent: {}
+[53.787116] (-) TimerEvent: {}
+[53.887439] (-) TimerEvent: {}
+[53.987871] (-) TimerEvent: {}
+[54.088290] (-) TimerEvent: {}
+[54.188630] (-) TimerEvent: {}
+[54.289049] (-) TimerEvent: {}
+[54.389438] (-) TimerEvent: {}
+[54.489894] (-) TimerEvent: {}
+[54.590337] (-) TimerEvent: {}
+[54.690887] (-) TimerEvent: {}
+[54.791216] (-) TimerEvent: {}
+[54.852300] (micro_ros_agent) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX shared library libmicroxrcedds_agent.so\x1b[0m\n'}
+[54.891394] (-) TimerEvent: {}
+[54.991881] (-) TimerEvent: {}
+[55.092423] (-) TimerEvent: {}
+[55.169902] (micro_ros_agent) StdoutLine: {'line': b'[100%] Built target microxrcedds_agent\n'}
+[55.192599] (-) TimerEvent: {}
+[55.194895] (micro_ros_agent) StdoutLine: {'line': b"\x1b[34m\x1b[1mNo install step for 'uagent'\x1b[0m\n"}
+[55.225376] (micro_ros_agent) StdoutLine: {'line': b"\x1b[34m\x1b[1mCompleted 'uagent'\x1b[0m\n"}
+[55.268988] (micro_ros_agent) StdoutLine: {'line': b'Built target uagent\n'}
+[55.292736] (-) TimerEvent: {}
+[55.296807] (micro_ros_agent) StdoutLine: {'line': b"[ 43%] \x1b[34m\x1b[1mPerforming install step for 'xrceagent'\x1b[0m\n"}
+[55.364320] (micro_ros_agent) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target microxrcedds_agent\x1b[0m\n'}
+[55.392888] (-) TimerEvent: {}
+[55.416806] (micro_ros_agent) StdoutLine: {'line': b'[100%] Built target microxrcedds_agent\n'}
+[55.439749] (micro_ros_agent) StdoutLine: {'line': b'\x1b[36mInstall the project...\x1b[0m\n'}
+[55.447912] (micro_ros_agent) StdoutLine: {'line': b'-- Install configuration: "Release"\n'}
+[55.448179] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_agent/lib/libmicroxrcedds_agent.so.2.4.1\n'}
+[55.451219] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_agent/lib/libmicroxrcedds_agent.so.2.4\n'}
+[55.451531] (micro_ros_agent) StdoutLine: {'line': b'-- Set runtime path of "/home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_agent/lib/libmicroxrcedds_agent.so.2.4.1" to ""\n'}
+[55.451670] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_agent/lib/libmicroxrcedds_agent.so\n'}
+[55.451843] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_agent/include/uxr/agent\n'}
+[55.452011] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_agent/include/uxr/agent/replier\n'}
+[55.452126] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_agent/include/uxr/agent/replier/Replier.hpp\n'}
+[55.452306] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_agent/include/uxr/agent/p2p\n'}
+[55.452475] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_agent/include/uxr/agent/p2p/InternalClientManager.hpp\n'}
+[55.452608] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_agent/include/uxr/agent/p2p/InternalClient.hpp\n'}
+[55.452737] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_agent/include/uxr/agent/types\n'}
+[55.452847] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_agent/include/uxr/agent/types/Optional.hpp\n'}
+[55.452958] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_agent/include/uxr/agent/types/MessageHeader.hpp\n'}
+[55.453110] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_agent/include/uxr/agent/types/SubMessageHeader.hpp\n'}
+[55.453264] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_agent/include/uxr/agent/types/XRCETypes.hpp\n'}
+[55.453587] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_agent/include/uxr/agent/types/TopicPubSubType.hpp\n'}
+[55.453719] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_agent/include/uxr/agent/transport\n'}
+[55.453843] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_agent/include/uxr/agent/transport/p2p\n'}
+[55.453970] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_agent/include/uxr/agent/transport/p2p/AgentDiscovererLinux.hpp\n'}
+[55.454095] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_agent/include/uxr/agent/transport/p2p/AgentDiscoverer.hpp\n'}
+[55.454234] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_agent/include/uxr/agent/transport/udp\n'}
+[55.454378] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_agent/include/uxr/agent/transport/udp/UDPv4AgentWindows.hpp\n'}
+[55.454533] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_agent/include/uxr/agent/transport/udp/UDPv4AgentLinux.hpp\n'}
+[55.454712] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_agent/include/uxr/agent/transport/udp/UDPv6AgentLinux.hpp\n'}
+[55.454852] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_agent/include/uxr/agent/transport/udp/UDPv6AgentWindows.hpp\n'}
+[55.454990] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_agent/include/uxr/agent/transport/can\n'}
+[55.455134] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_agent/include/uxr/agent/transport/can/CanAgentLinux.hpp\n'}
+[55.455261] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_agent/include/uxr/agent/transport/endpoint\n'}
+[55.455372] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_agent/include/uxr/agent/transport/endpoint/IPv4EndPoint.hpp\n'}
+[55.455522] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_agent/include/uxr/agent/transport/endpoint/CustomEndPoint.hpp\n'}
+[55.455629] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_agent/include/uxr/agent/transport/endpoint/CanEndPoint.hpp\n'}
+[55.455757] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_agent/include/uxr/agent/transport/endpoint/SerialEndPoint.hpp\n'}
+[55.455877] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_agent/include/uxr/agent/transport/endpoint/MultiSerialEndPoint.hpp\n'}
+[55.455999] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_agent/include/uxr/agent/transport/endpoint/IPv6EndPoint.hpp\n'}
+[55.456156] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_agent/include/uxr/agent/transport/serial\n'}
+[55.456305] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_agent/include/uxr/agent/transport/serial/MultiSerialAgentLinux.hpp\n'}
+[55.456447] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_agent/include/uxr/agent/transport/serial/MultiTermiosAgentLinux.hpp\n'}
+[55.456584] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_agent/include/uxr/agent/transport/serial/TermiosAgentLinux.hpp\n'}
+[55.456736] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_agent/include/uxr/agent/transport/serial/baud_rate_table_linux.h\n'}
+[55.456841] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_agent/include/uxr/agent/transport/serial/PseudoTerminalAgentLinux.hpp\n'}
+[55.456960] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_agent/include/uxr/agent/transport/serial/SerialAgentLinux.hpp\n'}
+[55.457076] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_agent/include/uxr/agent/transport/discovery\n'}
+[55.457187] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_agent/include/uxr/agent/transport/discovery/DiscoveryServerWindows.hpp\n'}
+[55.457359] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_agent/include/uxr/agent/transport/discovery/DiscoveryServer.hpp\n'}
+[55.457480] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_agent/include/uxr/agent/transport/discovery/DiscoveryServerLinux.hpp\n'}
+[55.457594] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_agent/include/uxr/agent/transport/Server.hpp\n'}
+[55.457732] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_agent/include/uxr/agent/transport/custom\n'}
+[55.457853] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_agent/include/uxr/agent/transport/custom/CustomAgent.hpp\n'}
+[55.457970] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_agent/include/uxr/agent/transport/util\n'}
+[55.458088] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_agent/include/uxr/agent/transport/util/InterfaceWindows.hpp\n'}
+[55.458207] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_agent/include/uxr/agent/transport/util/InterfaceLinux.hpp\n'}
+[55.458337] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_agent/include/uxr/agent/transport/tcp\n'}
+[55.458454] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_agent/include/uxr/agent/transport/tcp/TCPv4AgentLinux.hpp\n'}
+[55.458575] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_agent/include/uxr/agent/transport/tcp/TCPv6AgentWindows.hpp\n'}
+[55.458714] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_agent/include/uxr/agent/transport/tcp/TCPv6AgentLinux.hpp\n'}
+[55.458876] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_agent/include/uxr/agent/transport/tcp/TCPConnection.hpp\n'}
+[55.459014] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_agent/include/uxr/agent/transport/tcp/TCPServerBase.hpp\n'}
+[55.459145] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_agent/include/uxr/agent/transport/tcp/TCPv4AgentWindows.hpp\n'}
+[55.459278] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_agent/include/uxr/agent/transport/SessionManager.hpp\n'}
+[55.459439] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_agent/include/uxr/agent/transport/TransportRc.hpp\n'}
+[55.459570] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_agent/include/uxr/agent/transport/stream_framing\n'}
+[55.459695] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_agent/include/uxr/agent/transport/stream_framing/StreamFramingProtocol.hpp\n'}
+[55.459829] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_agent/include/uxr/agent/AgentInstance.hpp\n'}
+[55.459957] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_agent/include/uxr/agent/topic\n'}
+[55.460085] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_agent/include/uxr/agent/topic/Topic.hpp\n'}
+[55.460205] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_agent/include/uxr/agent/datawriter\n'}
+[55.460327] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_agent/include/uxr/agent/datawriter/DataWriter.hpp\n'}
+[55.460450] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_agent/include/uxr/agent/subscriber\n'}
+[55.460570] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_agent/include/uxr/agent/subscriber/Subscriber.hpp\n'}
+[55.460685] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_agent/include/uxr/agent/middleware\n'}
+[55.460802] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_agent/include/uxr/agent/middleware/utils\n'}
+[55.460921] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_agent/include/uxr/agent/middleware/utils/Callbacks.hpp\n'}
+[55.461032] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_agent/include/uxr/agent/middleware/fast\n'}
+[55.461173] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_agent/include/uxr/agent/middleware/fast/FastMiddleware.hpp\n'}
+[55.461292] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_agent/include/uxr/agent/middleware/fast/FastEntities.hpp\n'}
+[55.461420] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_agent/include/uxr/agent/middleware/fastdds\n'}
+[55.461539] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_agent/include/uxr/agent/middleware/fastdds/FastDDSEntities.hpp\n'}
+[55.461666] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_agent/include/uxr/agent/middleware/fastdds/FastDDSMiddleware.hpp\n'}
+[55.461812] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_agent/include/uxr/agent/middleware/ced\n'}
+[55.461931] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_agent/include/uxr/agent/middleware/ced/CedMiddleware.hpp\n'}
+[55.462076] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_agent/include/uxr/agent/middleware/ced/CedEntities.hpp\n'}
+[55.462215] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_agent/include/uxr/agent/middleware/Middleware.hpp\n'}
+[55.462359] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_agent/include/uxr/agent/scheduler\n'}
+[55.462480] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_agent/include/uxr/agent/scheduler/Scheduler.hpp\n'}
+[55.462612] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_agent/include/uxr/agent/scheduler/PacketScheduler.hpp\n'}
+[55.462742] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_agent/include/uxr/agent/utils\n'}
+[55.462859] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_agent/include/uxr/agent/utils/SeqNum.hpp\n'}
+[55.462981] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_agent/include/uxr/agent/utils/SharedMutex.hpp\n'}
+[55.463120] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_agent/include/uxr/agent/utils/Color.hpp\n'}
+[55.463251] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_agent/include/uxr/agent/utils/SharedMutexPriority.hpp\n'}
+[55.463379] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_agent/include/uxr/agent/utils/Functions.hpp\n'}
+[55.463535] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_agent/include/uxr/agent/utils/Conversion.hpp\n'}
+[55.463667] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_agent/include/uxr/agent/utils/TokenBucket.hpp\n'}
+[55.463796] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_agent/include/uxr/agent/utils/Time.hpp\n'}
+[55.463923] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_agent/include/uxr/agent/utils/ArgumentParser.hpp\n'}
+[55.464100] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_agent/include/uxr/agent/publisher\n'}
+[55.464233] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_agent/include/uxr/agent/publisher/Publisher.hpp\n'}
+[55.464359] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_agent/include/uxr/agent/client\n'}
+[55.464478] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_agent/include/uxr/agent/client/session\n'}
+[55.464593] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_agent/include/uxr/agent/client/session/stream\n'}
+[55.464712] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_agent/include/uxr/agent/client/session/stream/InputStream.hpp\n'}
+[55.464830] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_agent/include/uxr/agent/client/session/stream/OutputStream.hpp\n'}
+[55.464945] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_agent/include/uxr/agent/client/session/Session.hpp\n'}
+[55.465072] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_agent/include/uxr/agent/client/session/SessionInfo.hpp\n'}
+[55.465203] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_agent/include/uxr/agent/client/ProxyClient.hpp\n'}
+[55.465341] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_agent/include/uxr/agent/participant\n'}
+[55.465470] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_agent/include/uxr/agent/participant/Participant.hpp\n'}
+[55.465589] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_agent/include/uxr/agent/requester\n'}
+[55.465710] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_agent/include/uxr/agent/requester/Requester.hpp\n'}
+[55.465829] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_agent/include/uxr/agent/processor\n'}
+[55.465948] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_agent/include/uxr/agent/processor/Processor.hpp\n'}
+[55.466066] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_agent/include/uxr/agent/logger\n'}
+[55.466192] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_agent/include/uxr/agent/logger/Logger.hpp\n'}
+[55.466308] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_agent/include/uxr/agent/reader\n'}
+[55.466427] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_agent/include/uxr/agent/reader/Reader.hpp\n'}
+[55.466551] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_agent/include/uxr/agent/Agent.hpp\n'}
+[55.466677] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_agent/include/uxr/agent/message\n'}
+[55.466798] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_agent/include/uxr/agent/message/Packet.hpp\n'}
+[55.466913] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_agent/include/uxr/agent/message/OutputMessage.hpp\n'}
+[55.467048] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_agent/include/uxr/agent/message/InputMessage.hpp\n'}
+[55.467189] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_agent/include/uxr/agent/Root.hpp\n'}
+[55.467316] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_agent/include/uxr/agent/datareader\n'}
+[55.467433] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_agent/include/uxr/agent/datareader/DataReader.hpp\n'}
+[55.467564] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_agent/include/uxr/agent/object\n'}
+[55.467686] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_agent/include/uxr/agent/object/XRCEObject.hpp\n'}
+[55.467808] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_agent/include/uxr/agent/visibility.hpp\n'}
+[55.468369] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_agent/share/microxrcedds_agent/cmake/microxrcedds_agentTargets.cmake\n'}
+[55.468507] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_agent/share/microxrcedds_agent/cmake/microxrcedds_agentTargets-release.cmake\n'}
+[55.468664] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_agent/include/uxr/agent/config.hpp\n'}
+[55.468832] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_agent/share/microxrcedds_agent/LICENSE\n'}
+[55.469001] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_agent/share/microxrcedds_agent/cmake/microxrcedds_agentConfig.cmake\n'}
+[55.469137] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_agent/share/microxrcedds_agent/cmake/microxrcedds_agentConfigVersion.cmake\n'}
+[55.490326] (micro_ros_agent) StdoutLine: {'line': b"[ 50%] \x1b[34m\x1b[1mCompleted 'xrceagent'\x1b[0m\n"}
+[55.493041] (-) TimerEvent: {}
+[55.524211] (micro_ros_agent) StdoutLine: {'line': b'[ 50%] Built target xrceagent\n'}
+[55.549736] (micro_ros_agent) StdoutLine: {'line': b"[ 56%] \x1b[34m\x1b[1mCreating directories for 'micro_ros_agent'\x1b[0m\n"}
+[55.593163] (-) TimerEvent: {}
+[55.627382] (micro_ros_agent) StdoutLine: {'line': b"[ 62%] \x1b[34m\x1b[1mNo download step for 'micro_ros_agent'\x1b[0m\n"}
+[55.652541] (micro_ros_agent) StdoutLine: {'line': b"[ 68%] \x1b[34m\x1b[1mNo update step for 'micro_ros_agent'\x1b[0m\n"}
+[55.681704] (micro_ros_agent) StdoutLine: {'line': b"[ 75%] \x1b[34m\x1b[1mNo patch step for 'micro_ros_agent'\x1b[0m\n"}
+[55.693291] (-) TimerEvent: {}
+[55.707477] (micro_ros_agent) StdoutLine: {'line': b"[ 81%] \x1b[34m\x1b[1mPerforming configure step for 'micro_ros_agent'\x1b[0m\n"}
+[55.721284] (micro_ros_agent) StdoutLine: {'line': b'loading initial cache file /home/angelo/Documents/repos/ackermann_ros2/uros_ws/build/micro_ros_agent/micro_ros_agent-prefix/tmp/micro_ros_agent-cache-.cmake\n'}
+[55.727815] (micro_ros_agent) StdoutLine: {'line': b'-- Found ament_cmake: 2.0.6 (/opt/ros/iron/share/ament_cmake/cmake)\n'}
+[55.793392] (-) TimerEvent: {}
+[55.893757] (-) TimerEvent: {}
+[55.994092] (-) TimerEvent: {}
+[56.066894] (micro_ros_agent) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter \n'}
+[56.094243] (-) TimerEvent: {}
+[56.194543] (-) TimerEvent: {}
+[56.274858] (micro_ros_agent) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[56.283129] (micro_ros_agent) StdoutLine: {'line': b'-- Looking for C++ include pthread.h\n'}
+[56.294661] (-) TimerEvent: {}
+[56.394962] (-) TimerEvent: {}
+[56.395258] (micro_ros_agent) StdoutLine: {'line': b'-- Looking for C++ include pthread.h - found\n'}
+[56.395426] (micro_ros_agent) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[56.495124] (-) TimerEvent: {}
+[56.502813] (micro_ros_agent) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[56.503816] (micro_ros_agent) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[56.507685] (micro_ros_agent) StdoutLine: {'line': b'-- Found rosidl_cmake: 4.0.1 (/opt/ros/iron/share/rosidl_cmake/cmake)\n'}
+[56.508875] (micro_ros_agent) StdoutLine: {'line': b'-- Found rosidl_adapter: 4.0.1 (/opt/ros/iron/share/rosidl_adapter/cmake)\n'}
+[56.528781] (micro_ros_agent) StdoutLine: {'line': b'-- Found fastrtps_cmake_module: 3.0.2 (/opt/ros/iron/share/fastrtps_cmake_module/cmake)\n'}
+[56.531103] (micro_ros_agent) StdoutLine: {'line': b'-- Found rmw_dds_common: 2.0.1 (/opt/ros/iron/share/rmw_dds_common/cmake)\n'}
+[56.559590] (micro_ros_agent) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.0.1 (/opt/ros/iron/share/rosidl_generator_c/cmake)\n'}
+[56.568978] (micro_ros_agent) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.0.1 (/opt/ros/iron/share/rosidl_generator_cpp/cmake)\n'}
+[56.575938] (micro_ros_agent) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[56.588616] (micro_ros_agent) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[56.595373] (-) TimerEvent: {}
+[56.606596] (micro_ros_agent) StdoutLine: {'line': b'-- Found rmw_fastrtps_shared_cpp: 7.1.4 (/opt/ros/iron/share/rmw_fastrtps_shared_cpp/cmake)\n'}
+[56.663151] (micro_ros_agent) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/iron/include  \n'}
+[56.664434] (micro_ros_agent) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.14.4 (/opt/ros/iron/share/ament_lint_auto/cmake)\n'}
+[56.666531] (micro_ros_agent) StdoutLine: {'line': b'-- Found ament_cmake_gtest: 2.0.6 (/opt/ros/iron/share/ament_cmake_gtest/cmake)\n'}
+[56.667252] (micro_ros_agent) StdoutLine: {'line': b'-- Found micro_ros_msgs: 4.0.1 (/home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/share/micro_ros_msgs/cmake)\n'}
+[56.695498] (-) TimerEvent: {}
+[56.753605] (micro_ros_agent) StdoutLine: {'line': b'-- Configuring done\n'}
+[56.760810] (micro_ros_agent) StdoutLine: {'line': b'-- Generating done\n'}
+[56.762090] (micro_ros_agent) StdoutLine: {'line': b'-- Build files have been written to: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/build/micro_ros_agent\n'}
+[56.782919] (micro_ros_agent) StdoutLine: {'line': b"[ 87%] \x1b[34m\x1b[1mPerforming build step for 'micro_ros_agent'\x1b[0m\n"}
+[56.795753] (-) TimerEvent: {}
+[56.837505] (micro_ros_agent) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/micro_ros_agent.dir/src/agent/graph_manager/graph_manager.cpp.o\x1b[0m\n'}
+[56.837793] (micro_ros_agent) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/micro_ros_agent.dir/src/agent/graph_manager/graph_typesupport.cpp.o\x1b[0m\n'}
+[56.838001] (micro_ros_agent) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/micro_ros_agent.dir/src/main.cpp.o\x1b[0m\n'}
+[56.839697] (micro_ros_agent) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/micro_ros_agent.dir/src/agent/Agent.cpp.o\x1b[0m\n'}
+[56.841996] (micro_ros_agent) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding CXX object CMakeFiles/micro_ros_agent.dir/src/agent/utils/demangle.cpp.o\x1b[0m\n'}
+[56.895868] (-) TimerEvent: {}
+[56.996261] (-) TimerEvent: {}
+[57.096622] (-) TimerEvent: {}
+[57.197028] (-) TimerEvent: {}
+[57.297417] (-) TimerEvent: {}
+[57.397824] (-) TimerEvent: {}
+[57.498285] (-) TimerEvent: {}
+[57.598809] (-) TimerEvent: {}
+[57.699183] (-) TimerEvent: {}
+[57.799561] (-) TimerEvent: {}
+[57.899955] (-) TimerEvent: {}
+[58.000363] (-) TimerEvent: {}
+[58.100815] (-) TimerEvent: {}
+[58.201276] (-) TimerEvent: {}
+[58.301663] (-) TimerEvent: {}
+[58.402092] (-) TimerEvent: {}
+[58.502684] (-) TimerEvent: {}
+[58.603014] (-) TimerEvent: {}
+[58.703427] (-) TimerEvent: {}
+[58.803835] (-) TimerEvent: {}
+[58.904248] (-) TimerEvent: {}
+[59.004632] (-) TimerEvent: {}
+[59.105022] (-) TimerEvent: {}
+[59.205439] (-) TimerEvent: {}
+[59.305837] (-) TimerEvent: {}
+[59.406340] (-) TimerEvent: {}
+[59.506754] (-) TimerEvent: {}
+[59.607258] (-) TimerEvent: {}
+[59.707888] (-) TimerEvent: {}
+[59.808291] (-) TimerEvent: {}
+[59.908727] (-) TimerEvent: {}
+[60.009116] (-) TimerEvent: {}
+[60.109508] (-) TimerEvent: {}
+[60.210012] (-) TimerEvent: {}
+[60.310549] (-) TimerEvent: {}
+[60.411076] (-) TimerEvent: {}
+[60.511582] (-) TimerEvent: {}
+[60.611933] (-) TimerEvent: {}
+[60.712290] (-) TimerEvent: {}
+[60.812620] (-) TimerEvent: {}
+[60.912938] (-) TimerEvent: {}
+[61.013251] (-) TimerEvent: {}
+[61.113578] (-) TimerEvent: {}
+[61.213889] (-) TimerEvent: {}
+[61.300471] (micro_ros_agent) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable micro_ros_agent\x1b[0m\n'}
+[61.314041] (-) TimerEvent: {}
+[61.414486] (-) TimerEvent: {}
+[61.514946] (-) TimerEvent: {}
+[61.615305] (-) TimerEvent: {}
+[61.637657] (micro_ros_agent) StdoutLine: {'line': b'[100%] Built target micro_ros_agent\n'}
+[61.665115] (micro_ros_agent) StdoutLine: {'line': b"\x1b[34m\x1b[1mNo install step for 'micro_ros_agent'\x1b[0m\n"}
+[61.702870] (micro_ros_agent) StdoutLine: {'line': b"\x1b[34m\x1b[1mCompleted 'micro_ros_agent'\x1b[0m\n"}
+[61.715526] (-) TimerEvent: {}
+[61.740554] (micro_ros_agent) StdoutLine: {'line': b'Built target micro_ros_agent\n'}
+[61.753998] (micro_ros_agent) CommandEnded: {'returncode': 0}
+[61.815695] (-) TimerEvent: {}
+[61.871010] (micro_ros_agent) JobProgress: {'identifier': 'micro_ros_agent', 'progress': 'install'}
+[61.871687] (micro_ros_agent) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/angelo/Documents/repos/ackermann_ros2/uros_ws/build/micro_ros_agent'], 'cwd': '/home/angelo/Documents/repos/ackermann_ros2/uros_ws/build/micro_ros_agent', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'angelo'), ('LC_TIME', 'es_CL.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/iron/opt/rviz_ogre_vendor/lib:/opt/ros/iron/lib/x86_64-linux-gnu:/opt/ros/iron/lib'), ('HOME', '/home/angelo'), ('OLDPWD', '/home/angelo/Documents/repos/ackermann_ros2/uros_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'es_CL.UTF-8'), ('SYSTEMD_EXEC_PID', '2179'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/angelo/Documents/repos/ackermann_ros2/uros_ws/install'), ('ROS_DISTRO', 'iron'), ('LOGNAME', 'angelo'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'angelo'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('PATH', '/opt/ros/iron/bin:/home/angelo/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/abarbieri-laptop:@/tmp/.ICE-unix/1984,unix/abarbieri-laptop:/tmp/.ICE-unix/1984'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'es_CL.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/4ce74bac_35e3_4bc6_b9a7_60b7d68aaf0c'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'es_CL.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.F7IVR2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.98'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs:/home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_setup:/opt/ros/iron'), ('SHELL', '/bin/bash'), ('LC_NAME', 'es_CL.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'es_CL.UTF-8'), ('LC_IDENTIFICATION', 'es_CL.UTF-8'), ('ROS_AUTOMATIC_DISCOVERY_RANGE', 'SUBNET'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/angelo/Documents/repos/ackermann_ros2/uros_ws/build/micro_ros_agent'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs/lib/python3.10/site-packages:/opt/ros/iron/lib/python3.10/site-packages'), ('LC_NUMERIC', 'es_CL.UTF-8'), ('LC_PAPER', 'es_CL.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_msgs:/home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_setup:/opt/ros/iron')]), 'shell': False}
+[61.883906] (micro_ros_agent) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[61.884165] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_agent/share/ament_index/resource_index/package_run_dependencies/micro_ros_agent\n'}
+[61.884416] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_agent/share/ament_index/resource_index/parent_prefix_path/micro_ros_agent\n'}
+[61.884657] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_agent/share/micro_ros_agent/environment/ament_prefix_path.sh\n'}
+[61.884812] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_agent/share/micro_ros_agent/environment/ament_prefix_path.dsv\n'}
+[61.884968] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_agent/share/micro_ros_agent/environment/path.sh\n'}
+[61.885147] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_agent/share/micro_ros_agent/environment/path.dsv\n'}
+[61.885268] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_agent/share/micro_ros_agent/local_setup.bash\n'}
+[61.885412] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_agent/share/micro_ros_agent/local_setup.sh\n'}
+[61.885565] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_agent/share/micro_ros_agent/local_setup.zsh\n'}
+[61.885710] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_agent/share/micro_ros_agent/local_setup.dsv\n'}
+[61.885858] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_agent/share/micro_ros_agent/package.dsv\n'}
+[61.886038] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_agent/share/ament_index/resource_index/packages/micro_ros_agent\n'}
+[61.886210] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_agent/share/micro_ros_agent/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[61.886349] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_agent/share/micro_ros_agent/cmake/micro_ros_agentConfig.cmake\n'}
+[61.886488] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_agent/share/micro_ros_agent/cmake/micro_ros_agentConfig-version.cmake\n'}
+[61.886618] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_agent/share/micro_ros_agent/package.xml\n'}
+[61.886828] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_agent/lib/micro_ros_agent/micro_ros_agent\n'}
+[61.888413] (micro_ros_agent) StdoutLine: {'line': b'-- Set runtime path of "/home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_agent/lib/micro_ros_agent/micro_ros_agent" to ""\n'}
+[61.888585] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_agent/share/micro_ros_agent/launch\n'}
+[61.888687] (micro_ros_agent) StdoutLine: {'line': b'-- Installing: /home/angelo/Documents/repos/ackermann_ros2/uros_ws/install/micro_ros_agent/share/micro_ros_agent/launch/micro_ros_agent_launch.py\n'}
+[61.890415] (micro_ros_agent) CommandEnded: {'returncode': 0}
+[61.915825] (-) TimerEvent: {}
+[62.016255] (-) TimerEvent: {}
+[62.022859] (micro_ros_agent) JobEnded: {'identifier': 'micro_ros_agent', 'rc': 0}
+[62.023688] (-) EventReactorShutdown: {}

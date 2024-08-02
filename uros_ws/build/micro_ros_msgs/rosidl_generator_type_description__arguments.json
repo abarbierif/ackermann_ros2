@@ -1,0 +1,9 @@
+{
+  "package_name": "micro_ros_msgs",
+  "output_dir": "/home/angelo/Documents/repos/ackermann_ros2/uros_ws/build/micro_ros_msgs/rosidl_generator_type_description/micro_ros_msgs",
+  "idl_tuples": [
+    "/home/angelo/Documents/repos/ackermann_ros2/uros_ws/build/micro_ros_msgs/rosidl_adapter/micro_ros_msgs:msg/Graph.idl",
+    "/home/angelo/Documents/repos/ackermann_ros2/uros_ws/build/micro_ros_msgs/rosidl_adapter/micro_ros_msgs:msg/Node.idl",
+    "/home/angelo/Documents/repos/ackermann_ros2/uros_ws/build/micro_ros_msgs/rosidl_adapter/micro_ros_msgs:msg/Entity.idl"
+  ]
+}
