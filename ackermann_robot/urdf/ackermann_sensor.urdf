@@ -1,0 +1,227 @@
+<?xml version="1.0"?>
+<robot name="ackermann">
+    <link name="base_link">
+        <visual>
+            <origin xyz="0.0 0.0 0.125" />
+            <geometry>
+                <box size="0.6 0.35 0.05"/>
+            </geometry>
+            <material name="red">
+                <color rgba="1.0 0.0 0.0 0.5"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.0 0.0 0.125" />
+            <geometry>
+                <box size="0.6 0.35 0.05"/>
+            </geometry>
+        </collision>
+        <inertial>
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+            <mass value="10.0"/>
+            <inertia ixx="1e-3" ixy="0.0" ixz="0.0" iyy="1e-3" iyz="0.0" izz="1e-3" />
+        </inertial>
+    </link>
+
+    <link name="direction_left">
+        <visual>
+            <origin xyz="0.0 0.0 0.1" />
+            <geometry>
+                <sphere radius="0.0125"/>
+            </geometry>
+            <material name="blue">
+                <color rgba="0.0 0.0 1.0 0.5"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.0 0.0 0.1" />
+            <geometry>
+                <sphere radius="0.0125"/>
+            </geometry>
+        </collision>
+        <inertial>
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+            <mass value="10.0"/>
+            <inertia ixx="1e-3" ixy="0.0" ixz="0.0" iyy="1e-3" iyz="0.0" izz="1e-3" />
+        </inertial>
+    </link>
+
+    <link name="direction_right">
+        <visual>
+            <origin xyz="0.0 0.0 0.1" />
+            <geometry>
+                <sphere radius="0.0125"/>
+            </geometry>
+            <material name="blue">
+                <color rgba="0.0 0.0 1.0 0.5"/>
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0.0 0.0 0.1" />
+            <geometry>
+                <sphere radius="0.0125"/>
+            </geometry>
+        </collision>
+        <inertial>
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+            <mass value="10.0"/>
+            <inertia ixx="1e-3" ixy="0.0" ixz="0.0" iyy="1e-3" iyz="0.0" izz="1e-3" />
+        </inertial>
+    </link>
+
+    <link name="left_wheel">
+        <visual>
+            <origin rpy="${pi/2} 0.0 0.0"/>
+            <geometry>
+                <cylinder radius="0.1" length="0.05"/>
+            </geometry>
+            <material name="rubber">
+                <color rgba="0 0 0 0.6"/>
+            </material>
+        </visual>
+        <collision>
+            <origin rpy="${pi/2} 0.0 0.0"/>
+            <geometry>
+                <cylinder radius="0.1" length="0.05"/>
+            </geometry>
+        </collision>
+        <inertial>
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+            <mass value="10.0"/>
+            <inertia ixx="1e-3" ixy="0.0" ixz="0.0" iyy="1e-3" iyz="0.0" izz="1e-3" />
+        </inertial>
+    </link>
+
+    <link name="right_wheel">
+        <visual>
+            <origin rpy="${pi/2} 0.0 0.0"/>
+            <geometry>
+                <cylinder radius="0.1" length="0.05"/>
+            </geometry>
+            <material name="rubber">
+                <color rgba="0 0 0 0.6"/>
+            </material>
+        </visual>
+        <collision>
+            <origin rpy="${pi/2} 0.0 0.0"/>
+            <geometry>
+                <cylinder radius="0.1" length="0.05"/>
+            </geometry>
+        </collision>
+        <inertial>
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+            <mass value="10.0"/>
+            <inertia ixx="1e-3" ixy="0.0" ixz="0.0" iyy="1e-3" iyz="0.0" izz="1e-3" />
+        </inertial>
+    </link>
+
+    <link name="left_wheel_back">
+        <visual>
+            <origin rpy="${pi/2} 0.0 0.0"/>
+            <geometry>
+                <cylinder radius="0.1" length="0.05"/>
+            </geometry>
+            <material name="rubber">
+                <color rgba="0 0 0 0.6"/>
+            </material>
+        </visual>
+        <collision>
+            <origin rpy="${pi/2} 0.0 0.0"/>
+            <geometry>
+                <cylinder radius="0.1" length="0.05"/>
+            </geometry>
+        </collision>
+        <inertial>
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+            <mass value="10.0"/>
+            <inertia ixx="1e-3" ixy="0.0" ixz="0.0" iyy="1e-3" iyz="0.0" izz="1e-3" />
+        </inertial>
+    </link>
+
+    <link name="right_wheel_back">
+        <visual>
+            <origin rpy="${pi/2} 0.0 0.0"/>
+            <geometry>
+                <cylinder radius="0.1" length="0.05"/>
+            </geometry>
+            <material name="rubber">
+                <color rgba="0 0 0 0.6"/>
+            </material>
+        </visual>
+        <collision>
+            <origin rpy="${pi/2} 0.0 0.0"/>
+            <geometry>
+                <cylinder radius="0.1" length="0.05"/>
+            </geometry>
+        </collision>
+        <inertial>
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+            <mass value="10.0"/>
+            <inertia ixx="1e-3" ixy="0.0" ixz="0.0" iyy="1e-3" iyz="0.0" izz="1e-3" />
+        </inertial>
+    </link>
+
+    <link name="sensor_link">
+        <visual>
+            <geometry>
+                <box size="0.05 0.05 0.05"/>
+            </geometry>
+        </visual>
+        <collision>
+            <geometry>
+                <box size="0.05 0.05 0.05"/>
+            </geometry>
+        </collision>
+    </link>
+
+    <joint name="base_sensor_joint" type="fixed">
+        <parent link="base_link"/>
+        <child link="sensor_link"/>
+        <origin xyz="0.3 0 0.1" rpy="0.0 0.0 0.0"/>
+    </joint>
+
+    <joint name="base_link-direction_left" type="revolute">
+        <parent link="base_link"/>
+        <child link="direction_left"/>
+        <origin xyz="0.25 0.125 0.0" rpy="0.0 0.0 0.0"/>
+        <axis xyz="0.0 0.0 1"/>
+        <limit lower="${-pi/2.5}" upper="${pi/2.5}" effort="100" velocity="100"/>
+    </joint>
+
+    <joint name="base_link-direction_right" type="revolute">
+        <parent link="base_link"/>
+        <child link="direction_right"/>
+        <origin xyz="0.25 -0.125 0.0" rpy="0.0 0.0 0.0"/>
+        <axis xyz="0.0 0.0 1"/>
+        <limit lower="${-pi/2.5}" upper="${pi/2.5}" effort="100" velocity="100"/>
+    </joint>
+
+    <joint name="direction-lw" type="continuous">
+        <parent link="direction_left"/>
+        <child link="left_wheel"/>
+        <origin xyz="0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+        <axis xyz="0.0 1 0.0"/>
+    </joint>
+
+    <joint name="direction-rw" type="continuous">
+        <parent link="direction_right"/>
+        <child link="right_wheel"/>
+        <origin xyz="0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+        <axis xyz="0.0 1 0.0"/>
+    </joint>
+
+    <joint name="base_link-lwback" type="continuous">
+        <parent link="base_link"/>
+        <child link="left_wheel_back"/>
+        <origin xyz="-0.25 0.125 0.0" rpy="0.0 0.0 0.0"/>
+        <axis xyz="0.0 1 0.0"/>
+    </joint>
+
+    <joint name="base_link-rwback" type="continuous">
+        <parent link="base_link"/>
+        <child link="right_wheel_back"/>
+        <origin xyz="-0.25 -0.125 0.0" rpy="0.0 0.0 0.0"/>
+        <axis xyz="0.0 1 0.0"/>
+    </joint>
+
+</robot>
