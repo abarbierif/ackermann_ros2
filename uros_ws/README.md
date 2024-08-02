@@ -1,12 +1,12 @@
 ## uROS
-Se implementa un microcontrolador (ESP32) con un sensor ultrasónico () que se comunica con ros2 iron por puerto serial.
+Se implementa un microcontrolador (ESP32) con un sensor ultrasónico (HC-SR04) que se comunica con ros2 iron por puerto serial.
 El objetivo es agregar un sensor ultrasónico de forma física al robot ackermann y visualizarlo de forma virtual en RVIZ.
 > [!NOTE]
 > Se necesita la instalación del agente que permite la comunicación con uROS
 
 # Creación de nodo
 Se crea un nodo publicador en el microcontrolador utilizando Arduino IDE, este nodo envía un mensaje tipo range periodicamente.
-El mensaje depende de la captura del sensor ultrasónico. Se utiliza el Arduino IDE para subir el [archivo .ino](link) al microcontrolador.
+El mensaje depende de la captura del sensor ultrasónico. Se utiliza el Arduino IDE para subir el [archivo .ino]([link](https://github.com/abarbierif/ackermann_ros2/blob/main/uros_ws/src/node_sensor.ino)) al microcontrolador.
 > [!NOTE]
 > Es necesario instalar la librería de microROS en el Arduino IDE, en este proyecto se utiliza la distribución iron.
 
@@ -55,6 +55,7 @@ Para esto:
 comandos de ejecución:
 ```
 ros2 run robot_state_publisher robot_state_publisher <path absoluto URDF>
+ros2 run joint_state_publisher joint_state_publisher
 ros2 run joint_state_publisher_gui joint_state_publisher_gui
 ros2 run rviz2 rviz2
 ```
@@ -68,7 +69,5 @@ Dejando como referencia **base_link**, añadir modelo con el tópico **robot sta
 > Para utilizar esta forma alternativa es necesario tener instalado el paquete urdf_tutorial ```sudo apt install ros-iron-urdf-tutorial```.
 
 Una vez configurado se visualiza el modelo del robot con sus articulaciones y el range representando el sensor ultrasónico que cambia dependiendo del estado del sensor.
-(insertar gif)
 
-Finalmente se puede mostrar la unión de los nodos con ```rqt_graph```
-(imagen rqt_graph)
+Finalmente se puede mostrar la unión de los nodos con ```rqt_graph```.
