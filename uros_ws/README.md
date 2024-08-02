@@ -6,7 +6,7 @@ El objetivo es agregar un sensor ultrasónico de forma física al robot ackerman
 
 # Creación de nodo
 Se crea un nodo publicador en el microcontrolador utilizando Arduino IDE, este nodo envía un mensaje tipo range periodicamente.
-El mensaje depende de la captura del sensor ultrasónico. Se utiliza el Arduino IDE para subir el [archivo .ino]([link](https://github.com/abarbierif/ackermann_ros2/blob/main/uros_ws/src/node_sensor.ino)) al microcontrolador.
+El mensaje depende de la captura del sensor ultrasónico. Se utiliza el Arduino IDE para subir el [archivo .ino](https://github.com/abarbierif/ackermann_ros2/blob/main/uros_ws/src/node_sensor.ino) al microcontrolador.
 > [!NOTE]
 > Es necesario instalar la librería de microROS en el Arduino IDE, en este proyecto se utiliza la distribución iron.
 
@@ -46,7 +46,7 @@ ros2 topic list
 Donde debería estar el nodo creado con el nombre que se le asignó, en nuestro caso **micro_ros_arduino_node_publisher**
 
 # Visualización en RVIZ
-Una vez esté el tópico disponible, visualizamos el [URDF](link) modificado.
+Una vez esté el tópico disponible, visualizamos el [URDF](https://github.com/abarbierif/ackermann_ros2/blob/main/ackermann_robot/urdf/ackermann_sensor_xacro.urdf) modificado.
 Para esto:
 - Primero se crea el nodo que publica los estados del URDF.
 - Luego se crea el nodo que publica los joints y transformaciones.
